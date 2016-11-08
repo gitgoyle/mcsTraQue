@@ -1,0 +1,16 @@
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\bin\traque2.dll
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\bin\traque2.pdb
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\bin\traque2.xml
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\obj\Debug\traque2.Resources.resources
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\obj\Debug\traque2.vbproj.GenerateResource.Cache
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\obj\Debug\traque2.dll
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\obj\Debug\traque2.xml
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\traque2\obj\Debug\traque2.pdb
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\bin\traque2.dll
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\bin\traque2.pdb
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\bin\traque2.xml
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.Resources.resources
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.vbproj.GenerateResource.Cache
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.dll
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.xml
+C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.pdb

@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\cozmek\__traque2</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="adminDashboard.aspx">
+      <publishTime>09/18/2016 00:16:56</publishTime>
+    </File>
+    <File Include="agencyDashboard.aspx">
+      <publishTime>09/18/2016 10:43:50</publishTime>
+    </File>
+    <File Include="bin/traque2.dll">
+      <publishTime>09/20/2016 12:35:10</publishTime>
+    </File>
+    <File Include="bin/traque2.xml">
+      <publishTime>09/20/2016 12:35:10</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>08/21/2016 13:31:05</publishTime>
+    </File>
+    <File Include="css/datepicker.css">
+      <publishTime>08/21/2016 23:08:58</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>08/11/2016 01:58:43</publishTime>
+    </File>
+    <File Include="css/owl.carousel.css">
+      <publishTime>08/08/2016 00:14:34</publishTime>
+    </File>
+    <File Include="css/prettyPhoto.css">
+      <publishTime>08/08/2016 00:14:34</publishTime>
+    </File>
+    <File Include="css/responsive.css">
+      <publishTime>08/08/2016 00:14:34</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>09/18/2016 00:32:38</publishTime>
+    </File>
+    <File Include="css/white.css">
+      <publishTime>08/08/2016 00:14:34</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>08/11/2016 01:58:43</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>09/06/2016 12:17:33</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>08/11/2016 01:58:43</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>08/11/2016 01:58:43</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>08/11/2016 01:58:43</publishTime>
+    </File>
+    <File Include="frmUpload.aspx">
+      <publishTime>09/11/2016 16:07:03</publishTime>
+    </File>
+    <File Include="fup.aspx">
+      <publishTime>08/07/2016 13:47:30</publishTime>
+    </File>
+    <File Include="images/01.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/02.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/03.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/04.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/accordian-arrow.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/accordian-open.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/amazon.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/app.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/app2.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/attached-file.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/bell.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/cert.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/close.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/contact.jpg">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/cozmek.PNG">
+      <publishTime>08/24/2016 22:41:05</publishTime>
+    </File>
+    <File Include="images/dash-logo.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dashboard1.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dashboard2.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dashboard3.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dashboard4.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dashboard5.jpg">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/delet-small.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/delete-active.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/delete.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/doc-file.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/down-arrow.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/down.gif">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/dropdown.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/duel-phone-big.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/edit-active.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/edit.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/eduCustomImage.png">
+      <publishTime>08/13/2016 17:49:13</publishTime>
+    </File>
+    <File Include="images/envelop.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/equip.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/expired.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/expiring.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/export.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/favicon.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/finCustomImage.png">
+      <publishTime>08/13/2016 17:46:54</publishTime>
+    </File>
+    <File Include="images/flags%402x.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/flags.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/frCustomImage.png">
+      <publishTime>08/13/2016 17:34:29</publishTime>
+    </File>
+    <File Include="images/frCustomImage1.png">
+      <publishTime>08/13/2016 17:34:29</publishTime>
+    </File>
+    <File Include="images/icon-menu-dashboard.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/icon-menu.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/image-file.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/image-upload.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/itCustomImage.png">
+      <publishTime>08/13/2016 17:45:44</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/medCustomImage.png">
+      <publishTime>08/13/2016 17:40:51</publishTime>
+    </File>
+    <File Include="images/next-month.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/next.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/next_white.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/noti-remove.jpg">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/notification_user.jpg">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/pattern-1.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/phone.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/phone2.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/phone3.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/pink.jpg">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/plan-expire.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/plan-upgraded.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/playstore.png">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="images/plus.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/pop.jpg">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/previous-month.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/previous.png">
+      <publishTime>05/28/2016 16:46:01</publishTime>
+    </File>
+    <File Include="images/previous_white.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/profile.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/record.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/right-arrow.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/rrCustomImage.png">
+      <publishTime>08/13/2016 17:43:17</publishTime>
+    </File>
+    <File Include="images/search.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/select-dropdown.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/select2-spinner.gif">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/select2.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/select2x2.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/sort_asc.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/sort_asc_disabled.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/sort_both.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/sort_desc.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/sort_desc_disabled.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/stripe_powered.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider1.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider2.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider3.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider4.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider5.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/tab-slider6.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/team1.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/team2.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/team3.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/train.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/up-arrow.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/uploads/MIKE_07382016_013814_dashboard5.jpg">
+      <publishTime>08/07/2016 13:38:14</publishTime>
+    </File>
+    <File Include="images/uploads/MIKE_07452016_014501_accordian-arrow.png">
+      <publishTime>08/07/2016 13:45:39</publishTime>
+    </File>
+    <File Include="images/uploads/MIKE_07482016_014810_adminDashboard.PNG">
+      <publishTime>08/07/2016 13:48:20</publishTime>
+    </File>
+    <File Include="images/user-icon.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/user-image.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/user.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/user1.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/user2.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/user3.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/vertical-slider.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/vertical-slider1.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/vertical-slider2.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="images/vertical-tab.png">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>09/18/2016 01:53:44</publishTime>
+    </File>
+    <File Include="js/bootstrap-datepicker.js">
+      <publishTime>08/21/2016 13:57:14</publishTime>
+    </File>
+    <File Include="js/bootstrap.min.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/jquery.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/jquery.localScroll.min.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/jquery.nav.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/jquery.parallax-1.1.3.js">
+      <publishTime>09/06/2016 12:17:20</publishTime>
+    </File>
+    <File Include="js/jquery.prettyPhoto.js">
+      <publishTime>08/13/2016 18:01:34</publishTime>
+    </File>
+    <File Include="js/jquery.scrollto.min.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>08/19/2016 04:13:01</publishTime>
+    </File>
+    <File Include="js/member.js">
+      <publishTime>09/20/2016 12:41:17</publishTime>
+    </File>
+    <File Include="js/modernizr-latest.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/owl.carousel.min.js">
+      <publishTime>08/08/2016 00:14:35</publishTime>
+    </File>
+    <File Include="js/trqCustom.js">
+      <publishTime>09/18/2016 10:38:44</publishTime>
+    </File>
+    <File Include="media/ppipn.txt">
+      <publishTime>08/01/2016 08:10:24</publishTime>
+    </File>
+    <File Include="media/TraQueVideo.avi">
+      <publishTime>07/30/2016 19:29:02</publishTime>
+    </File>
+    <File Include="media/TraQueVideo.mp4">
+      <publishTime>07/30/2016 19:49:57</publishTime>
+    </File>
+    <File Include="member.aspx">
+      <publishTime>09/20/2016 01:14:23</publishTime>
+    </File>
+    <File Include="ppConfirm.aspx">
+      <publishTime>08/01/2016 22:41:40</publishTime>
+    </File>
+    <File Include="ppTestPost.aspx">
+      <publishTime>08/01/2016 23:08:44</publishTime>
+    </File>
+    <File Include="userUploads/ChanceNode.bmp">
+      <publishTime>09/13/2016 23:27:20</publishTime>
+    </File>
+    <File Include="userUploads/EMVdecision.png">
+      <publishTime>09/13/2016 23:03:00</publishTime>
+    </File>
+    <File Include="userUploads/EMVnode.png">
+      <publishTime>09/13/2016 23:22:23</publishTime>
+    </File>
+    <File Include="userUploads/New Text Document.txt">
+      <publishTime>09/13/2016 22:59:23</publishTime>
+    </File>
+    <File Include="userUploads/tab-slider4.jpg">
+      <publishTime>05/28/2016 16:46:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/20/2016 12:41:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
