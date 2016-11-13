@@ -22,6 +22,10 @@
     <link href="css/white.css" rel="stylesheet" type="text/css" />
     <!-- Custom Responsive stylesheet -->
     <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Styles specific to TraQue -->
+    <link href="css/traque.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,7 +69,7 @@
                     </div>
                     <div class="item next left">
                       <img src="images/tab-slider5.jpg" alt="" />
-                    </div>                    
+                    </div>
                     <div class="item next left">
                       <img src="images/tab-slider6.jpg" alt="" />
                     </div>
@@ -73,7 +77,7 @@
                 </div> <!-- end #carousel -->
                 </div> <!-- end .photo-slide -->
               </div> <!-- end .top > .container> .row> .col-md-5 -->
-              <div class="col-sm-11 col-md-11">
+              <div class="col-sm-12 col-md-12">
                 <div class="content">
                   <%--<h1>TraQue</h1>--%>
                   <h2>RELAX, WE'VE GOT THIS.</h2>
@@ -94,7 +98,7 @@
                     </li>--%>
                 </ul>
                     <div>
-                  <p style="min-width:440px;margin-left:50px">We know how valuable your time is.  <br />Let TraQue handle all your certification reminders, training schedules and equipment purchases.<br /><br />
+                  <p>We know how valuable your time is.  <br />Let TraQue handle all your certification reminders, training schedules and equipment purchases.<br /><br />
 <%--                      <a href="#" style="text-decoration:none; background-color:transparent; color:cyan !important"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;See TraQue In Action</a>--%>
                     <iframe width="360" height="315" src="https://www.youtube.com/embed/cliUPvNKOEM?rel=0" frameborder="0" allowfullscreen></iframe><br />
 <%--                      <video src="../media/TraQueVideo.mp4" width="300" height="300" controls></video><br /><br />--%>
@@ -115,10 +119,10 @@
             </div> <!-- end .top> .container> .row -->
           </div> <!-- end .top> .container -->
         </div> <!-- end .top -->
-      <!--</div> <!-- end .bg-color --> -->
+      <!--</div> <!-- end .bg-color -->
     </header>
     <!-- ====== End Header Section ====== -->
-    <!-- ====== Menu Section ====== --> 
+    <!-- ====== Menu Section ====== -->
     <section id="menu">
       <div class="navigation">
         <div id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -160,8 +164,8 @@
         <div class="container">
           <div class="header">
             <h1>Why <strong>T</strong>ra<strong>Q</strong>ue?</h1>
-            <p>A lapse in certification renewal and continuing education can cost you employment opportunities.  Companies may encourage or require employees to hold certifications 
-                and expired credentials can mean a loss of business.  Let TraQue handle your certification renewal notifications so you are alerted by text and email as renewal dates 
+            <p>A lapse in certification renewal and continuing education can cost you employment opportunities.  Companies may encourage or require employees to hold certifications
+                and expired credentials can mean a loss of business.  Let TraQue handle your certification renewal notifications so you are alerted by text and email as renewal dates
                 approach.  Customized notification schedules conveniently remind you months, weeks and days in advance so you don't have to worry about missing any important dates.</p>
             <div class="underline"><i class="fa fa-universal-access"></i></div>
           </div>
@@ -174,7 +178,7 @@
             </div> <!-- end item -->
             <div class="item">
               <a href="images/medCustomImage.png" data-rel="prettyPhoto"><img src="images/tab-slider2.jpg" alt=""></a>
-              <p style="text-align:center">Medical Professionals</p>  
+              <p style="text-align:center">Medical Professionals</p>
             </div> <!-- end item -->
             <div class="item">
               <a href="images/rrCustomImage.png" data-rel="prettyPhoto"><img src="images/tab-slider3.jpg" height="300" alt=""></a>
@@ -195,7 +199,7 @@
           </div> <!-- end owl carousel -->
 
         </div> <!-- .container -->
-      </div> <!-- end .screenshots -->  
+      </div> <!-- end .screenshots -->
     </section>
     <!-- ====== End Screenshots Section ====== -->
 
@@ -240,7 +244,7 @@
                     </div> <!-- end icon -->
                     <div class="meta-text">
                       <h3>Security</h3>
-                      <p>Our site uses HTTPS (HTTP over SSL).  
+                      <p>Our site uses HTTPS (HTTP over SSL).
                                 This protocol encrypts and decrypts subscriber requests as well as web pages which are delivered from our server.  </p>
                     </div> <!-- end .meta-text -->
                   </div> <!-- end .featured-item -->
@@ -415,8 +419,8 @@
 
           <div class="header">
             <h1><strong>TraQue Plans</strong></h1>
-            <p>TraQue offers a variety of plans to suit your individual or business needs.  Just learning about TraQue?  Our FREE individual plan is a perfect way to find out how valuable TraQue can be to you. 
-                Our PREMIUM individual plan at only $3/month allows you to track unlimited certificate renewals, equipment purchases and training.  If you're part of a business, small or large, the AGENCY tiered 
+            <p>TraQue offers a variety of plans to suit your individual or business needs.  Just learning about TraQue?  Our FREE individual plan is a perfect way to find out how valuable TraQue can be to you.
+                Our PREMIUM individual plan at only $3/month allows you to track unlimited certificate renewals, equipment purchases and training.  If you're part of a business, small or large, the AGENCY tiered
                 plans are perfect to keep your entire organization on track.  Tiered annual pricing allows you to choose the plan that fits your organization with the greatest cost savings.  Scroll down to see the features!</p>
             <div class="underline"><i class="fa fa-flash"></i></div>
           </div> <!-- end .container> .header -->
@@ -424,10 +428,10 @@
           <div class="row">
             <div class="price-list">
 
-              <div class="col-md-4"> 
+              <div class="col-md-4">
                 <div class="price-table featured-price">
                   <div class="rate">$0.00</div>
-                  <h2><i class="fa fa-user"></i>Free Usage</h2>      
+                  <h2><i class="fa fa-user"></i>Free Usage</h2>
 <%--                  <p>Single User, one notification, one upload</p>--%>
                   <ul style="width:80%; text-align:left; margin-left:15%">
                     <li><i class="fa fa-check-circle"></i>One Certification</li>
@@ -441,7 +445,7 @@
                 </div> <!-- end .price-table -->
               </div> <!-- end .price-list> .col-md-4 (1) -->
 
-              <div class="col-md-4"> 
+              <div class="col-md-4">
                 <div class="price-table featured-price">
                   <div class="rate" style="text-align:center">$36/YR<br /><span style="font-size:small">USD</span></div>
                   <h2><i class="fa fa-user-plus"></i>Premium</h2>
@@ -460,7 +464,7 @@
 
               <div class="col-md-4">
                 <div class="price-table featured-price">
-                  <div class="rate" style="text-align:center;">TIERED<br /><span style="font-size:small">ANNUAL</span></div> 
+                  <div class="rate" style="text-align:center;">TIERED<br /><span style="font-size:small">ANNUAL</span></div>
                   <h2><i class="fa fa-group"></i>AGENCY</h2>
                   <p style="font-size:small; text-align:center">All <strong style="font-size:large">Premium</strong> Features For Every Member Of Your Organization</p>
                     <table style="background-color:transparent; margin-left:auto; margin-right:auto; width:90%;height:201px">
@@ -512,7 +516,7 @@
                   <input type="text" class="form-control" id="subject" placeholder="Subject">
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
-              
+
               <div class="col-xs-12 col-md-6">
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
@@ -522,7 +526,7 @@
             </div> <!-- end .form> .row -->
 
             <button class="btn btn-default contact-submit custom-btn" type="submit"><i class="fa fa-hand-o-right"></i>SUBMIT</button>
-          </form> <!-- end .form -->   
+          </form> <!-- end .form -->
         </div> <!-- end .container -->
       </div> <!-- end .footer -->
     </footer>
@@ -596,7 +600,7 @@
                         <td style="text-align:left;">User Name&nbsp;&nbsp;</td>
                     </tr>
                     <tr>
-                        <td><input id="inpUserName" placeholder="email address" style="margin-top:5px; margin-right:5px;padding:3px; border:1px solid lightgray; width:200px" /></td>        
+                        <td><input id="inpUserName" placeholder="email address" style="margin-top:5px; margin-right:5px;padding:3px; border:1px solid lightgray; width:200px" /></td>
                     </tr>
                     <tr>
                         <td style="text-align:left">Password&nbsp;&nbsp;</td></tr>
@@ -619,7 +623,7 @@
               <div id="divLoginMSG" style="width:100%; padding-left:5px"></div>
             </div>
           </div>
-        </div>     
+        </div>
 
         <div id="myFreeSignUp" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -741,6 +745,6 @@
         </div>             <!--end modal  -->
 
     <!-- ================= MODALS ================= -->
-   
+
 </body>
 </html>

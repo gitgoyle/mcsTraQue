@@ -1,0 +1,53 @@
+// out: ./traque.css, sourcemap: false, compress: true
+
+@nav-color: white;
+@nav-color-hover: black;
+
+/**
+ * Navigation bar
+ */
+.navigation .navbar-default .navbar-nav>li {
+  > a {
+    color: @nav-color;
+  }
+
+  > a:hover,
+  &.active > a {
+    color: @nav-color-hover;
+    text-decoration: underline;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 370px;
+}
+
+/**
+ * Main
+ */
+.section-padding {
+  padding-top: 70px;
+}
+
+.top .content h2 {
+  display: inline-block;
+}
+.social-network {
+  float: right;
+  margin-top: 20px;
+  a.icoTwitter:hover {
+    background-color: #4099ff;
+  }
+}
+
+// TODO: Decide how big we want this
+iframe {
+  @iframe-width: 30vw;
+	height: @iframe-width*.5625;
+	width: 30vw;
+  @media (max-width: 768px) {
+    @iframe-width-responsive: calc(~"100vw - 60px");
+    height: calc(~"@{iframe-width-responsive}*.5625");
+    width: @iframe-width-responsive;
+  }
+}

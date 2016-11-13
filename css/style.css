@@ -1,5 +1,5 @@
 /* =========================================
-Theme Name: Akshara App 
+Theme Name: Akshara App
 Author URI: http://aspxtemplates.com/
 ========================================= */
 
@@ -109,7 +109,7 @@ ul li {
 }
 .bg-color {
 	background: rgba(0, 0, 0, 0.6);
-    height:800px;
+    /*height:800px;*/
 }
 .section-padding {
 	padding-top: 100px;
@@ -151,7 +151,7 @@ textarea:focus {
 }
 
 /*===============================
- Icons 
+ Icons
 ====================================*/
 
 .bg-color ul.social-network
@@ -184,10 +184,10 @@ textarea:focus {
     background-color: #3B5998;
 }
 
-.bg-color .social-network a.icoTwitter:hover
+/*.bg-color .social-network a.icoTwitter:hover
 {
     background-color: #660066;
-}
+}*/
 
 .bg-color .social-network a.icoGoogle:hover
 {
@@ -267,13 +267,13 @@ textarea:focus {
 
 
 /* =========================================
-Section Header                 
+Section Header
 ========================================= */
 header
 {
-    background: url('../images/cert.png') no-repeat fixed 50% 0;
+    /*background: url('../images/cert.png') no-repeat fixed 50% 0;
     background-size: cover;
-    height:800px;
+    height:800px;*/
 }
 .top .photo-slide {
 	max-width: 350px;
@@ -302,9 +302,9 @@ header
 .top .content p
 {
     font-size: 18px;
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
     letter-spacing: 1px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 .top .content .button a {
 	font-size: 28px;
@@ -327,17 +327,17 @@ header
 
 
 /* =========================================
-Section Menu                 
+Section Menu
 ========================================= */
 .navigation {
 	max-height: 2.75em; /*changed mcs 8.22*/
 }
 
-.navigation .navbar {
+/*.navigation .navbar {
 	border: none;
 	margin-bottom: 0;
 	min-height: 3em;
-}
+}*/
 .navigation .navbar .navbar-brand {
 	color: #fff;
 	font-size: 40px;
@@ -349,10 +349,10 @@ Section Menu
 {
     background-color: rgba(207, 197, 197, 1); /*#33033D;*/
     box-shadow: 0 0px 10px rgba(0,0,0,.2);
-    border: none;
-    border-radius: 0;
-    clear: both;
-    
+    /*border: none;*/
+    /*border-radius: 0;*/
+    /*clear: both;*/
+
 }
 .navigation .navbar-default .navbar-nav>li>a {
 	color: #fff;
@@ -361,11 +361,11 @@ Section Menu
 	padding-bottom: 25px;
 }
 
-.navigation .navbar-default .navbar-nav > li > a:hover, .navigation .navbar-default .navbar-nav > .active > a, .navigation .navbar-default .navbar-nav > .active > a:hover, .navigation .navbar-default .navbar-nav > .active > a:focus
+/*.navigation .navbar-default .navbar-nav > li > a:hover, .navigation .navbar-default .navbar-nav > .active > a, .navigation .navbar-default .navbar-nav > .active > a:hover, .navigation .navbar-default .navbar-nav > .active > a:focus
 {
     background: none;
     color: #BF0BE6;
-}
+}*/
 .navigation .btn-default:hover,
 .navigation .btn-default:focus,
 .navigation .btn-default:active,
@@ -384,7 +384,7 @@ h1 i
 
 
 /* =========================================
-Section Features                 
+Section Features
 ========================================= */
 .features .featured-item-img {
 	width: 252px;
@@ -448,11 +448,11 @@ Section Features
 {
     background-image: url('../images/pattern-1.png');
     background-repeat: repeat;
-    
+
 }
 
 /* =========================================
- Section Screenshots                 
+ Section Screenshots
 ========================================= */
 .owl-carousel {
 	margin-bottom: 50px;
@@ -472,7 +472,7 @@ Section Features
 
 /* Styling Next and Prev buttons */
 
-.owl-theme .owl-controls .owl-buttons div{ 
+.owl-theme .owl-controls .owl-buttons div{
 	color: #FFF;
 	display: inline-block;
 	zoom: 1;
@@ -544,7 +544,7 @@ Section Features
 
 
 /* =========================================
-Section Description                 
+Section Description
 ========================================= */
 .description .app-image
 {
@@ -552,9 +552,9 @@ Section Description
     margin: 30px auto 50px auto;
 }
 .description .content h1 {
-	
+
 	color: #33033d;
-	
+
 }
 .description .content h4 {
 	font-size: 28px;
@@ -601,7 +601,7 @@ Section Description
 	margin-bottom: 15px;
 }
 /* =========================================
-Section Testimonial                 
+Section Testimonial
 ========================================= */
 #testimonial {
 	background: url(../images/dashboard2.png) 50% 0 no-repeat fixed;
@@ -650,7 +650,7 @@ Section Testimonial
 }
 
 /* =========================================
-Section Team                 
+Section Team
 ============================================ */
 .team {
 	text-align: center;
@@ -738,7 +738,7 @@ Section Team
 }
 
 /* =========================================
- Section Price                 
+ Section Price
 ========================================= */
 .price .price-table
 {
@@ -836,7 +836,7 @@ Section Team
 }
 
 /* =========================================
- Section Subscribe                 
+ Section Subscribe
 ========================================= */
 .subscribe {
 	text-align: center;
@@ -899,7 +899,7 @@ Section Team
 }
 
 /* =========================================
- Section Download                 
+ Section Download
 ========================================= */
 #download {
 	background: url(images/bg5.jpg) 50% 0 no-repeat fixed;
@@ -952,7 +952,7 @@ Section Team
 }
 
 /* =========================================
-Section Footer                 
+Section Footer
 ========================================= */
 
 .footer {
@@ -994,7 +994,7 @@ Section Footer
 }
 
 /* =========================================
- Section Copyright                 
+ Section Copyright
 ========================================= */
 .copyright
 {
