@@ -1,0 +1,17 @@
+# This file contains a list of files that are unique to a user and should not be added to the Git repository.
+
+.vs/config/applicationhost.config
+.vs/traque2/v14/.suo
+
+bin/traque2.dll
+bin/traque2.dll.config
+bin/traque2.pdb
+bin/traque2.xml
+
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/traque2.dll
+obj/Debug/traque2.pdb
+obj/Debug/traque2.vbproj.FileListAbsolute.txt
+obj/Debug/traque2.vbproj.GenerateResource.cache
+obj/Debug/traque2.vbprojResolveAssemblyReference.cache
+obj/Debug/traque2.xml
