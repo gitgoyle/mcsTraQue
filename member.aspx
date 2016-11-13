@@ -26,6 +26,9 @@
     <!-- datepicker-->
     <link href="css/datepicker.css" rel="Stylesheet" />
 
+    <!-- Styles specific to TraQue -->
+    <link href="css/traque.css" rel="stylesheet">
+
     <script type="text/javascript">
         function setProfile() {
             doGetCounts(function () { return; });
@@ -184,10 +187,10 @@
                         <tr><td colspan="3"><i id='icoEditProfile' class="fa fa-edit fa-2x" title="edit profile" style="float:right; visibility:hidden"></i></td></tr>
                         <tr class="tblRow" id="trEmailEdit">
                             <td class="tblLabel"><span>Email</span></td><td style="width:2em">&nbsp</td><td id="tdProfileName" style="text-align:left; padding:3px"><span>profile name here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
-                        </tr>                            
+                        </tr>
                         <tr class="tblRow" id="trFullNameEdit">
                             <td class="tblLabel"><span>Full Name</span></td><td style="width:2em">&nbsp</td><td id="tdFullName" style="text-align:left; padding:3px"><span>full name here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
-                        </tr>                            
+                        </tr>
                         <tr class="tblRow" id="trPlanEdit">
                             <td class="tblLabel"><span>Plan</span></td><td style="width:2em">&nbsp</td><td id="tdPlan" style="text-align:left; padding:3px"><span>selected plan here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
                         </tr>
@@ -214,17 +217,17 @@
             <br /><br /><br />
           <div class="row">
             <div class="price-list">
-              <div class="col-md-4"> 
+              <div class="col-md-4">
             <!--
                 <div class="price-table" > style="background-image:url('../images/cert.png')"
-                  <div class="rate"><span style="font-size:xx-large">0</span></div> 
+                  <div class="rate"><span style="font-size:xx-large">0</span></div>
                   <h2 style="background-color:#000; opacity:.75; font-weight:bold; border-radius:10px; padding:5px">CERTIFICATES</h2><br /><br />
-                 <h2></h2> 
+                 <h2></h2>
                  <p></p>
             </div> --%>
                 <!-- end .price-table -->
                 <div class="price-table" style="background-color:lightgray">
-                  <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div> 
+                  <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div>
                   <h2 style="font-weight:bold; color:darkred">CERTIFICATES <br />ENTERED</h2>
                   <div id="certFooter" style="bottom:0; height:3em">
                       <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
@@ -239,9 +242,9 @@
                 </div>
               </div> <!-- end .price-list> .col-md-4 (1) -->
 
-              <div class="col-md-4"> 
+              <div class="col-md-4">
                 <div class="price-table" style="background-color:lightgray">
-                    <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div> 
+                    <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div>
                     <h2 style="font-weight:bold; color:darkred">TRAINING <br />HOURS</h2>
                     <div id="trainFooter" style="bottom:0; height:3em">
                         <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
@@ -258,7 +261,7 @@
 
               <div class="col-md-4">
                 <div class="price-table" style="background-color:lightgray">
-                <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div> 
+                <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div>
                   <h2 style="font-weight:bold; color:darkred">EQUIPMENT <br />PURCHASES</h2>
                   <div id="equipFooter" style="bottom:0; height:3em">
                       <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
@@ -305,7 +308,7 @@
                   <input type="text" class="form-control" id="subject" placeholder="Subject" />
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
-              
+
               <div class="col-xs-12 col-md-6">
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
@@ -315,7 +318,7 @@
             </div> <!-- end .form> .row -->
 
             <button class="btn btn-default contact-submit custom-btn" type="submit"><i class="fa fa-hand-o-right"></i>SUBMIT</button>
-          </form> <!-- end .form -->   
+          </form> <!-- end .form -->
         </div> <!-- end .container -->
       </div> <!-- end .footer -->
     </footer>
@@ -433,7 +436,7 @@
             text-align:left;
             min-width:6em;
         }
-        
+
         #tblAddModal {
             width:60%;
             margin-left:auto;
@@ -562,7 +565,7 @@
                         <tr id="trAmountHours"><td id="modiAmountHours">AMOUNT</td><td><input id="modifyAmount" title="amount" /></td></tr>
                         <tr><td>NOTES</td><td><textarea id="modifyNotes" style="min-width:200px" title="notes"></textarea></td></tr>
                         <tr><td>ATTACHED</td><td><a href="" target="_blank" id="modifyFile"></a></td></tr>
-                        <%--<span style="height:50px; width:100px; background-color:#ffffff">&nbsp;<a id="modiFileDelete"><i class="fa fa-trash"></i></a><a id="modiFileView"><i class="fa fa-download"></i></a></span> --%> 
+                        <%--<span style="height:50px; width:100px; background-color:#ffffff">&nbsp;<a id="modiFileDelete"><i class="fa fa-trash"></i></a><a id="modiFileView"><i class="fa fa-download"></i></a></span> --%>
                     </table>
                   </div>
                   <div class="modal-footer" style="border:none">
@@ -646,7 +649,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
     </form>
 </body>
 </html>

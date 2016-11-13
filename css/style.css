@@ -304,7 +304,7 @@ header
     font-size: 18px;
     /*margin-bottom: 70px;*/
     letter-spacing: 1px;
-    /*margin-top: 30px;*/
+    margin-top: 30px;
 }
 .top .content .button a {
 	font-size: 28px;
@@ -355,7 +355,7 @@ Section Menu
 
 }
 .navigation .navbar-default .navbar-nav>li>a {
-	color: #fff;
+	/*color: #fff;*/
 	font-weight: 400;
 	padding-top: 25px;
 	padding-bottom: 25px;
