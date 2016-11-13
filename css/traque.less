@@ -26,7 +26,7 @@
  * Main
  */
 .section-padding {
-  padding-top: 70px;
+  padding: 70px 0;
 }
 
 .top .content h2 {
@@ -49,5 +49,51 @@ iframe {
     @iframe-width-responsive: calc(~"100vw - 60px");
     height: calc(~"@{iframe-width-responsive}*.5625");
     width: @iframe-width-responsive;
+  }
+}
+
+/**
+ * Modals
+ */
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal-body {
+    overflow-y: auto;
+    input, select, textarea {
+      width: 250px;
+    }
+  }
+
+  .datepicker {
+    width: 250px;
+  }
+
+  @media (min-width: 768px) {
+    width: 90vw;
+    table {
+      width: 100%;
+    }
+  }
+}
+
+/**
+ *.Plans
+ */
+.featured-price {
+  margin-top: 5em;
+}
+
+/**
+ * Dashboard
+ */
+#dashboard {
+  .container {
+    padding: 3em 0;
   }
 }

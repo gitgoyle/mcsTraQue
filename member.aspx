@@ -101,10 +101,6 @@
             height:2em;
         }
 
-        .price-list :hover {
-            opacity:.85;
-        }
-
         .inputPad {
             padding-left:5px;
         }
@@ -214,7 +210,6 @@
             <!--<h1>DASHBOARD</h1>-->
             <%--<div class="underline"><i class="fa fa-dashboard"></i></div>--%>
           </div> <!-- end .container> .header -->
-            <br /><br /><br />
           <div class="row">
             <div class="price-list">
               <div class="col-md-4">
@@ -541,7 +536,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="headerEditH4" class="modal-title">modEditModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat;">
                     <div id="modEditSelect" style="padding:10px;"><table id="tblItemList" style="font-size:x-small"></table></div>
                   </div>
                 </div>
@@ -584,14 +579,14 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 id="headerAddH4"  class="modal-title">Add New Item</h4>
               </div>
-              <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat">
+              <div class="modal-body" style=" background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat">
                 <!--<p><img src="images/pop.jpg" height="200" width="150" style="float:left; padding-right:8px"/></p> -->
-                    <div style="width:100%; position:absolute; margin-left:auto; margin-right:auto; text-align:center">
+                    <div style="width:100%; margin-left:auto; margin-right:auto; text-align:center">
                     <table id="tblAddModal" style="width:80%">
                         <tr>
                             <td id="tdCategory" class="col-xs-10">Category</td>
                             <td>
-                                <select id="inpCategory" style="width:200px">
+                                <select id="inpCategory">
                                   <option value="0"></option>
                                   <option value="1">IT</option>
                                   <option value="2">Acct/Finance</option>
@@ -605,11 +600,11 @@
                         </tr>
                         <tr>
                             <td id="dateType" class="col-xs-10" style="min-width:140px">Renewal Date</td>
-                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px; border:1px solid lightgray; padding:3px; width:140px" /></td>
+                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px; border:1px solid lightgray; padding:3px;" /></td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Title</td>
-                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px; min-width:240px; margin-right:5px;padding-left:5px; border:1px solid lightgray; width:180px" /></td>
+                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px; min-width:240px; margin-right:5px;padding-left:5px; border:1px solid lightgray;" /></td>
                         </tr>
                         <tr id="trPurchaseAmount">
                             <td id="tdAmountHours" class="col-xs-10">Amount</td>
