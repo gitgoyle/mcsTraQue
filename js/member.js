@@ -3,7 +3,6 @@ var activeEdit;
 var activeItemID;
 
 $(document).ready(function () {
-
     $("#divWelcomeBack").html("<strong>Welcome back </strong> " + localStorage.getItem("username"));
 
     $('#inpDate').datepicker({
@@ -64,7 +63,7 @@ $(document).ready(function () {
     });
 
 
-    $("#btnAddSubmit").click(function (e) {
+    $("#btnAddSubmit").click(function () {
         //console.log('submitted ' + activeAdd);
         saveSubmission(function () {
             $("#spanTinyMSG").html("<i class='fa fa-check fa-3x'></i><br />" + activeAdd + '<br /> saved!');
@@ -192,6 +191,7 @@ function saveSubmission(callBack, varIn) {
                     $("#modAddModal").modal("hide");
                     ifrUploadFile();
                     //$("#btnFileUpload").trigger("click");
+                    $("#btnTinyMSGClose").trigger("click");
                     callBack();
                 }, 1000);
             }

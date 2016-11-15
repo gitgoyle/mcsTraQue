@@ -90,6 +90,7 @@
     <Content Include="css\prettyPhoto.css" />
     <Content Include="css\responsive.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\traque.css" />
     <Content Include="css\white.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="frmUpload.aspx" />
@@ -317,6 +318,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\traque.less" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

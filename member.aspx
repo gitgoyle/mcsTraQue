@@ -367,7 +367,24 @@
 
             jQuery("#modEditModal").on('hide.bs.modal', function () {
                 doGetCounts(function () { return; })
-            })
+            });
+
+            jQuery("#msgTinyModal").on("show.bs.modal", function (e) {
+                if (e.keyCode == 27) { // escape key maps to keycode `27`
+                    jQuery("#btnTinyMSGClose").trigger("click");
+                    // <DO YOUR WORK HERE>
+                }
+                setTimeout(function () {
+                    jQuery("#btnTinyMSGClose").focus();
+                }, 500);
+            });
+
+            jQuery("#modAddModal").keyup(function (e) {
+                if (e.keyCode == 27) { // escape key maps to keycode `27`
+                    jQuery(this).datepicker('hide');
+                    // <DO YOUR WORK HERE>
+                }
+            });
 
             jQuery('#modAddModal').on('shown.bs.modal', function () {
                 var atype = activeAdd;
