@@ -1,7 +1,40 @@
 // out: ./traque.css, sourcemap: false, compress: true
 
+@button-color: #27935d;
+
 @nav-color: white;
 @nav-color-hover: black;
+
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  background-color: white;
+  border: 1px solid @button-color;
+  color: @button-color;
+  font-size: 1.1em;
+  min-width: 100px;
+  &:hover {
+    background-color: @button-color;
+    color: white;
+    text-decoration: none;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+.btn-info, .btn-primary {
+  background-color: @button-color;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 
 /**
  * Navigation bar
@@ -66,6 +99,7 @@ iframe {
   .modal-body {
     overflow-y: auto;
     input, select, textarea {
+      padding-left: .5em;
       width: 250px;
     }
   }

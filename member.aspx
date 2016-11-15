@@ -225,11 +225,11 @@
                   <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div>
                   <h2 style="font-weight:bold; color:darkred">CERTIFICATES <br />ENTERED</h2>
                   <div id="certFooter" style="bottom:0; height:3em">
-                      <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                      <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>
                           ADD
                       </a>
-                      <a href="#" id="editCert" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                      <a href="#" id="editCert" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                           <i class="fa fa-edit"></i>
                           EDIT
                       </a>
@@ -242,11 +242,11 @@
                     <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div>
                     <h2 style="font-weight:bold; color:darkred">TRAINING <br />HOURS</h2>
                     <div id="trainFooter" style="bottom:0; height:3em">
-                        <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                        <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                             <i class="fa fa-plus-circle"></i>
                             ADD
                         </a>
-                        <a href="#" id="editTraining" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                        <a href="#" id="editTraining" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                             <i class="fa fa-edit"></i>
                             EDIT
                         </a>
@@ -259,11 +259,11 @@
                 <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div>
                   <h2 style="font-weight:bold; color:darkred">EQUIPMENT <br />PURCHASES</h2>
                   <div id="equipFooter" style="bottom:0; height:3em">
-                      <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                      <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>
                           ADD
                       </a>
-                      <a href="#" id="editEquipment" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                      <a href="#" id="editEquipment" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                           <i class="fa fa-edit"></i>
                           EDIT
                       </a>

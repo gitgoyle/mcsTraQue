@@ -89,11 +89,11 @@ ul li {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.custom-btn:hover {
+/*.custom-btn:hover {
 	background-color: #33033D;
 	color: #fff;
 	border-color: #33033D;
-}
+}*/
 .btn:active, .btn.active {
 	outline: none;
 	-webkit-box-shadow: none;
@@ -258,10 +258,10 @@ textarea:focus {
     transition: all 0.8s;
 }
 
-.bg-color a
+/*.bg-color a
 {
     background: rgba(255, 255, 255, 0.5);
-}
+}*/
 
 
 

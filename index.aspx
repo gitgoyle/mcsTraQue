@@ -102,9 +102,16 @@
 <%--                      <a href="#" style="text-decoration:none; background-color:transparent; color:cyan !important"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;See TraQue In Action</a>--%>
                     <iframe width="360" height="315" src="https://www.youtube.com/embed/cliUPvNKOEM?rel=0" frameborder="0" allowfullscreen></iframe><br />
 <%--                      <video src="../media/TraQueVideo.mp4" width="300" height="300" controls></video><br /><br />--%>
-                    <a id="aLoginLink" class="btn btn-default btn-custom" data-toggle="modal" data-target="#myLogin"><span style="font-size:medium; color:#000">MEMBERS</span></a>
-                    <a href="#price" class="btn btn-default btn-custom"><span style="font-size:medium; color:#000">JOIN TraQue</span></a>
-
+                    <a id="aLoginLink" class="btn btn-default btn-custom" data-toggle="modal" data-target="#myLogin">
+                      <span>
+                        MEMBERS
+                      </span>
+                    </a>
+                    <a href="#price" class="btn btn-default btn-custom">
+                      <span>
+                        JOIN TraQue
+                      </span>
+                    </a>
                   </p>
                 </div>
                   <%--<div class="button" id="download-app1">
@@ -474,7 +481,7 @@
                           <tr><td>201 - 500 Users $8500/yr ($17/User)</td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td style="padding:5px">
-                            Don't See A Plan That Suits You? <br /> Contact <a class="btn btn-warning" href="mailto:admin@traque.net"><span style="color:#000">TraQue</span></a></td></tr>
+                            Don't See A Plan That Suits You? <br /> Contact <a class="btn btn-warning" href="mailto:admin@traque.net"><span>TraQue</span></a></td></tr>
                     </table>
                     <br /><br />
                   <ul style="height:147px">
@@ -597,28 +604,44 @@
                   <p><img src="images/pop.jpg" height="200" width="150" style="float:left; padding-right:8px"/>
                   <table>
                     <tr>
-                        <td style="text-align:left;">User Name&nbsp;&nbsp;</td>
+                      <td>User Name</td>
                     </tr>
                     <tr>
-                        <td><input id="inpUserName" placeholder="email address" style="margin-top:5px; margin-right:5px;padding:3px; border:1px solid lightgray; width:200px" /></td>
+                      <td>
+                        <input id="inpUserName" placeholder="email address"/>
+                      </td>
                     </tr>
                     <tr>
-                        <td style="text-align:left">Password&nbsp;&nbsp;</td></tr>
-                      <tr>
-                        <td><input id="inpPassword" type="password" placeholder="password"  style="margin-top:5px; border:1px solid lightgray; padding:3px; width:200px"  /></td>
+                      <td>
+                        Password
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input id="inpPassword" type="password" placeholder="password"/>
+                      </td>
                     </tr>
                   </table>
                   <%--<input id="divWelcomeBack" style="border:none" /> --%>
                 </p>
               </div>
-              <div class="modal-footer" style="border:none">
-                    <a id="btnLoginCancel" class="btn btn-default btn-custom" data-dismiss="modal"><span style="font-size:medium; color:#000">Close</span></a>
-                    <a id="btnLogin" href="#price" class="btn btn-info"><span style="font-size:medium; color:#000">Enter TraQue</span></a>
-                <%--
-                <button id="_btnLoginCancel" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button id="_btnLogin" type="button" class="btn btn-default">Enter TraQue</button>
-              --%>
-
+              <div class="modal-footer">
+                <a id="btnLoginCancel" class="btn btn-default btn-custom" data-dismiss="modal">
+                  <span>
+                    Close
+                  </span>
+                </a>
+                <a id="btnLogin" href="#price" class="btn btn-info">
+                  <span>
+                    Enter TraQue
+                  </span>
+                </a>
+                <!-- <button id="_btnLoginCancel" type="button" class="btn btn-default" data-dismiss="modal">
+                  Close
+                </button>
+                <button id="_btnLogin" type="button" class="btn btn-default">
+                  Enter TraQue
+                </button> -->
               </div>
               <div id="divLoginMSG" style="width:100%; padding-left:5px"></div>
             </div>
