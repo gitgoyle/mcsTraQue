@@ -146,7 +146,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href=""><img src="images/logo.png" height="80" width="120" /></a>
+              <a class="navbar-brand" href=""><img src="images/logo.png"/></a>
               <div id="divWelcomeBack" style="position:absolute; background-color:transparent; top:90px; width:260px">&nbsp;</div>
             </div> <!-- end .navbar-header -->
             <div style="width:50%; float:right; text-align:right"><span id="spWelcome" style="font-size:medium"></span></div>
@@ -287,7 +287,7 @@
           <form action="" class="form contact">
 
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="name" class="sr-only">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Name">
@@ -304,7 +304,7 @@
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
 
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
                   <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -320,17 +320,11 @@
     <!-- ====== End Contact Section ====== -->
 
     <!-- ====== Copyright Section ====== -->
-    <section class="copyright dark-bg">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-5 col-md-5">
-        <p>&copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved</p>
-        </div>
-
-        </div>
-      </div> <!-- end .container -->
+    <section class="copyright">
+      &copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved
     </section>
     <!-- ====== End Copyright Section ====== -->
+
     <!-- jQuery -->
     <!--<script src="js/jquery.min.js"></script>-->
     <script src="js/jquery.min.js"></script>
@@ -489,15 +483,15 @@
     </style>
 
     <!-- this is a message from the application -->
-        <div id="msgTinyModal" class="modal fade" style="width:300px;margin-left:auto;margin-right:auto" role="dialog">
+        <div id="msgTinyModal" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:300px" >
                 <div class="modal-content" style="width:300px" >
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="headerTinyMSGH4" class="modal-title"></h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
-                    <span id="spanTinyMSG" style="background-color:#ffffff"></span>
+                  <div class="modal-body" style="background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat;">
+                    <span id="spanTinyMSG" style="color:white"></span>
                   </div>
                   <div class="modal-footer" style="border:none">
                     <button id="btnTinyMSGClose" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CLOSE</button>
@@ -617,15 +611,17 @@
                         </tr>
                         <tr>
                             <td id="dateType" class="col-xs-10" style="min-width:140px">Renewal Date</td>
-                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px; border:1px solid lightgray; padding:3px;" /></td>
+                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px;" /></td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Title</td>
-                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px; min-width:240px; margin-right:5px;padding-left:5px; border:1px solid lightgray;" /></td>
+                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px;" /></td>
                         </tr>
                         <tr id="trPurchaseAmount">
                             <td id="tdAmountHours" class="col-xs-10">Amount</td>
-                            <td><input id="purchaseAmount" style="text-align:right;" type="number" /></td>
+                            <td>
+                              <input id="purchaseAmount" type="number"/>
+                            </td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Notes</td>

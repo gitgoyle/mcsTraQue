@@ -507,7 +507,7 @@
           <form action="" class="form contact">
 
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="name" class="sr-only">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Name">
@@ -524,7 +524,7 @@
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
 
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
                   <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -538,20 +538,13 @@
       </div> <!-- end .footer -->
     </footer>
     <!-- ====== End Contact Section ====== -->
+
     <!-- ====== Copyright Section ====== -->
-    <section class="copyright dark-bg">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-5 col-md-5" style="text-align:center; width:100%">
-        <p><span style="font-size:x-small">&copy; 2016 COZMEK SOLUTIONS, All Rights Reserved</span></p>
-        </div>
-         <div class="col-lg-5 col-md-5">
-        <p><strong style="font-size:small"></strong></p>
-        </div>
-        </div>
-      </div> <!-- end .container -->
+    <section class="copyright">
+      &copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved
     </section>
     <!-- ====== End Copyright Section ====== -->
+
     <!-- jQuery -->
     <!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
     <script src="js/jquery.js"></script>
@@ -595,7 +588,7 @@
           <div id="myLogin" class="modal fade" role="dialog">
             <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content" style="max-width:552px">
+            <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 id="H1"  class="modal-title">Sign In</h4>

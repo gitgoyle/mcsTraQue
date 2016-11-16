@@ -1,12 +1,32 @@
 // out: ./traque.css, sourcemap: false, compress: true
 
-@button-color: #27935d;
+@primary-color: #27935d;
 
 @nav-color: white;
 @nav-color-hover: black;
 
-a:hover {
-  text-decoration: underline;
+#divWelcomeBack {
+  display: none; // TODO: Decide if we want this
+}
+
+a {
+  color: @primary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input, select, textarea {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 6px 12px;
+  &:focus {
+    border: 1px solid @primary-color;
+    outline: none;
+  }
+}
+textarea {
+  resize: none;
 }
 
 /**
@@ -14,12 +34,12 @@ a:hover {
  */
 .btn {
   background-color: white;
-  border: 1px solid @button-color;
-  color: @button-color;
+  border: 1px solid @primary-color;
+  color: @primary-color;
   font-size: 1.1em;
   min-width: 100px;
   &:hover {
-    background-color: @button-color;
+    background-color: @primary-color;
     color: white;
     text-decoration: none;
   }
@@ -28,7 +48,7 @@ a:hover {
   }
 }
 .btn-info, .btn-primary {
-  background-color: @button-color;
+  background-color: @primary-color;
   color: white;
   &:hover {
     text-decoration: underline;
@@ -88,9 +108,16 @@ iframe {
 /**
  * Modals
  */
+.modal {
+  background: fade(white, 30%);
+}
 .modal-dialog {
   display: flex;
   justify-content: center;
+
+  .close {
+    color: @primary-color;
+  }
 
   .modal-content {
     width: 100%;
@@ -99,26 +126,46 @@ iframe {
   .modal-body {
     overflow-y: auto;
     input, select, textarea {
-      padding-left: .5em;
       width: 250px;
     }
   }
 
-  .datepicker {
-    width: 250px;
-  }
-
   @media (min-width: 768px) {
-    width: 90vw;
+    width: 90vw; // TODO: Make a small and a large style modal
     table {
       width: 100%;
     }
   }
 }
+#modAddModal, #myLogin {
+  .modal-dialog {
+    @media (min-width: 768px) {
+      width: 600px;
+    }
+  }
+}
 
-// TODO: This proably shouldn't be a table
-#myLogin table {
+.datepicker {
+  width: 250px;
+  .active {
+    background-color: @primary-color;
+    color: white;
+  }
+  .prev, .switch, .next , .day, .month {
+    &:hover {
+      outline: 1px solid @primary-color;
+    }
+  }
+}
+
+/**
+ * Login
+ */
+#myLogin table { // TODO: This proably shouldn't be a table
   width: initial;
+}
+#divLoginMSG {
+  color: @primary-color;
 }
 
 /**
@@ -135,4 +182,26 @@ iframe {
   .container {
     padding: 3em 0;
   }
+}
+
+/**
+ * Profile
+ */
+#icoEditProfile {
+  color: @primary-color;
+  cursor: pointer;
+}
+
+/**
+ * Contact Us
+ */
+#contact .container {
+  max-width: 400px;
+  textarea {
+    width: 100%;
+  }
+}
+
+.copyright p {
+  margin: 0;
 }

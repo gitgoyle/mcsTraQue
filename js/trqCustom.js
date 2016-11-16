@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     var logged;
     logged = localStorage.getItem("isLoggedIn");
-    
+
     console.log(logged);
     console.log(isTesting);
 
@@ -87,7 +87,7 @@ function doLogin(parmFinal, callBack) {
                 sessionStorage.setItem("planType", ret[7]);
                 localStorage.setItem("planType", ret[7]);
                 $("#divWelcomeBack").html('Welcome Back ' + ret[2] + ' ' + ret[3]);
-                $("#divLoginMSG").html("<span style='color:red; font-weight:bold; background-color:#FFF'>Entering TraQue ...</span>");
+                $("#divLoginMSG").html("<span>Entering TraQue ...</span>");
                 setTimeout(function () {
                     $("#myLogin").modal('hide');
                     if (isTesting == "Y") {

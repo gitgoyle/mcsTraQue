@@ -26,13 +26,13 @@ $(document).ready(function () {
             activeAdd = "TRAIN";
             $("#spanFileName").html("");
             ifrBtnClick();
-            $(".modal-body").css("height", "20em");
+            // $(".modal-body").css("height", "20em");
         } else {
             $("#headerAddH4").html("Add New Equipment Purchase");
             activeAdd = "EQUIP";
             $("#spanFileName").html("");
             ifrBtnClick();
-            $(".modal-body").css("height", "20em");
+            // $(".modal-body").css("height", "20em");
         }
         //console.log('adding ' + activeAdd);
     });
@@ -106,7 +106,7 @@ $(document).ready(function () {
             modifyPrompt(fc, pass, function () { return; });
         }
     });
-    
+
     $("#btnPromptOK").click(function () {
         //deleting an entry
         var parmFinal;
