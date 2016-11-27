@@ -650,10 +650,10 @@
                 <h4 id="mod_header_free"  class="modal-title">Single Basic <span style="color:red">FREE</span></h4>
               </div>
               <div class="modal-body">
-                  <input class="input-lg" style="width:80%" id="inpFirstName_free" placeholder="first name" />
-                  <input class="input-lg" style="width:80%" id="inpLastName_free" placeholder="last name" />
-                  <input class="input-lg" style="width:80%" id="inpEmail_free" placeholder="email address" />
-                  <input class="input-lg" style="width:80%" id="inpMobile" placeholder="mobile phone" />
+                  <input class="input-lg" id="inpFirstName_free" placeholder="first name" />
+                  <input class="input-lg" id="inpLastName_free" placeholder="last name" />
+                  <input class="input-lg" id="inpEmail_free" placeholder="email address" />
+                  <input class="input-lg" id="inpMobile" placeholder="mobile phone" />
               </div>
 
                 <div style="width:100%; text-align:center">
@@ -692,9 +692,9 @@
                 <h4 id="mod_header_indpre"  class="modal-title">Single Premium<span style="color:red">$36/YR</span></h4>
               </div>
               <div class="modal-body">
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpFirstName_premium" placeholder="first name" /><br />
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpLastName_premium" placeholder="last name" /><br />
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpEmail_premium" placeholder="email address" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpFirstName_premium" placeholder="first name" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpLastName_premium" placeholder="last name" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpEmail_premium" placeholder="email address" /><br />
               </div>
 
                 <div id="ppIndy" style="width:100%; text-align:center">
@@ -723,12 +723,12 @@
             <div class="modal-content"  style="background-image:url('img/bg22.jpg')">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 id="mod_header_agency"  class="modal-title"></h4>
+                <h4 id="mod_header_agency"  class="modal-title">Agency</h4>
               </div>
               <div class="modal-body">
-                  <input class="input-lg" style="width:80%" id="Text1" placeholder="first name" />
-                  <input class="input-lg" style="width:80%" id="Text2" placeholder="last name" />
-                  <input class="input-lg" style="width:80%" id="Text3" placeholder="email address" />
+                  <input class="input-lg" id="Text1" placeholder="first name" />
+                  <input class="input-lg" id="Text2" placeholder="last name" />
+                  <input class="input-lg" id="Text3" placeholder="email address" />
               </div>
 
             <div id="ppAgency" style="width:100%; text-align:center">

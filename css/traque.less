@@ -22,7 +22,6 @@ a {
 
 input, select, textarea {
   border: 1px solid lightgray;
-  border-radius: 4px;
   padding: 6px 12px;
   &:focus {
     border: 1px solid @primary-color;
@@ -210,8 +209,12 @@ iframe {
 
   .modal-body {
     overflow-y: auto;
-    input, select, textarea {
+    input:not(.input-lg), select, textarea {
       width: 250px;
+    }
+    .input-lg {
+      display: block;
+      width: 100%;
     }
   }
 
@@ -222,7 +225,8 @@ iframe {
     }
   }
 }
-#modAddModal, #myLogin {
+// small modals
+#modAddModal, #myLogin, #myFreeSignUp, #myIndPremium, #myAgency {
   .modal-dialog {
     @media (min-width: 768px) {
       width: 600px;
