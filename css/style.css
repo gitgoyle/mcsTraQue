@@ -26,7 +26,7 @@ body
 h1 {
 	margin-bottom: 30px;
 	font-size: 60px;
-	color: #fff;
+	/*color: #fff;*/
 	font-weight: 100;
 }
 
@@ -59,7 +59,7 @@ ul li {
 	max-width: 350px;
 	margin: auto;
 	margin-bottom: 80px;
-	color: #33033D;
+	/*color: #33033D;*/
 }
 .underline:before {
 	position: absolute;
@@ -84,7 +84,7 @@ ul li {
     background-color: transparent;
     color: #660066;
     border-radius: 0;
-    border: 2px solid #660066;
+    /*border: 2px solid #660066;*/
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -107,11 +107,11 @@ ul li {
 .header p {
 	margin-bottom: 30px;
 }
-.bg-color {
+/*.bg-color {
 	background: rgba(0, 0, 0, 0.6);
-    /*height:800px;*/
+  height:800px;
 }
-/*.section-padding {
+.section-padding {
 	padding-top: 100px;
 	padding-bottom:50px;
 }*/
@@ -250,7 +250,7 @@ textarea:focus {
 
 .bg-color .social-circle i
 {
-    color: #fff;
+    /*color: #fff;*/
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -329,15 +329,15 @@ header
 /* =========================================
 Section Menu
 ========================================= */
-.navigation {
+/*.navigation {
 	max-height: 2.75em; /*changed mcs 8.22*/
-}
+/*}*/
 
 /*.navigation .navbar {
 	border: none;
 	margin-bottom: 0;
 	min-height: 3em;
-}*/
+}
 .navigation .navbar .navbar-brand {
 	color: #fff;
 	font-size: 40px;
@@ -347,21 +347,21 @@ Section Menu
 }
 .navigation .navbar-default
 {
-    background-color: rgba(207, 197, 197, 1); /*#33033D;*/
-    box-shadow: 0 0px 10px rgba(0,0,0,.2);
+    background-color: rgba(207, 197, 197, 1); /*#33033D;*/*/
+    /*box-shadow: 0 0px 10px rgba(0,0,0,.2);*/
     /*border: none;*/
     /*border-radius: 0;*/
-    /*clear: both;*/
+    /*clear: both;
 
 }
 .navigation .navbar-default .navbar-nav>li>a {
-	/*color: #fff;*/
+	color: #fff;
 	font-weight: 400;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
 
-/*.navigation .navbar-default .navbar-nav > li > a:hover, .navigation .navbar-default .navbar-nav > .active > a, .navigation .navbar-default .navbar-nav > .active > a:hover, .navigation .navbar-default .navbar-nav > .active > a:focus
+.navigation .navbar-default .navbar-nav > li > a:hover, .navigation .navbar-default .navbar-nav > .active > a, .navigation .navbar-default .navbar-nav > .active > a:hover, .navigation .navbar-default .navbar-nav > .active > a:focus
 {
     background: none;
     color: #BF0BE6;
@@ -377,10 +377,10 @@ h1 i
 {
     padding-right: 20px;
 }
-.header h1
+/*.header h1
 {
     color: #33033d;
-}
+}*/
 
 
 /* =========================================
@@ -674,7 +674,7 @@ Section Team
 	width: 263px;
 	height: 263px;
 	position: absolute;
-	background: rgba(51, 3, 61, 0.9);
+	/*background: rgba(51, 3, 61, 0.9);*/
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
@@ -748,12 +748,12 @@ Section Team
     /*margin-left: auto;*/
     /*margin-right: auto;*/
     /*margin-bottom: 80px;*/
-    background-color: #fff;
+    /*background-color: #fff;*/
     /*margin-top: 150px;*/
     color: #FFFFFF;
     background-image: url('../images/pattern-1.png');
     background-repeat: repeat;
-    background-color: #660066;
+    /*background-color: #660066;*/
 }
 .price .header .underline {
 	margin-bottom: 10px;
@@ -803,8 +803,8 @@ Section Team
 	color: #e74c3c;
 }
 .price .price-list .rate {
-	background: #33033D;
-	color: #fff;
+	/*background: #33033D;
+	color: #fff;*/
 	font-size: 40px;
 	text-align: center;
 	padding: 60px 0;
@@ -819,21 +819,21 @@ Section Team
 }
 .price .price-list .buy-now {
 	border: 1px solid transparent;
-	background: #31870e;
+	/*background: #31870e;*/
 	padding: 10px 30px;
 	border-radius: 0;
 	font-size: 20px;
 	margin-bottom: 30px;
-	color: #fff;
+	/*color: #fff;*/
 	position: absolute;
 	left: 50%;
 	bottom: -55px;
 	margin-left: -75px;
 }
-.price .featured-price .rate,
+/*.price .featured-price .rate,
 .price .featured-price .buy-now {
 	background: #e74c3c;
-}
+}*/
 
 /* =========================================
  Section Subscribe
@@ -1000,7 +1000,7 @@ Section Footer
 {
     text-align: center;
     padding: 30px 0;
-    background-color:darkgray !important;    /*#660066 !important;*/
+    /*background-color:darkgray !important;    /*#660066 !important;*/*/
     /*color: #000;*/
     /*text-shadow:none;*/
     font-size:small;

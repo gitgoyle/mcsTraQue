@@ -91,7 +91,7 @@
     <style type="text/css">
         .tblLabel {
             text-align:right;
-            color:darkred;
+            /*color:darkred;*/
         }
         .tblLabel span::after {
             content: ":";
@@ -149,7 +149,7 @@
               <a class="navbar-brand" href=""><img src="images/logo.png"/></a>
               <div id="divWelcomeBack" style="position:absolute; background-color:transparent; top:90px; width:260px">&nbsp;</div>
             </div> <!-- end .navbar-header -->
-            <div style="width:50%; float:right; text-align:right"><span id="spWelcome" style="font-size:medium"></span></div>
+            <div style="float:right; text-align:right"><span id="spWelcome" style="font-size:medium"></span></div>
 
             <div class="navbar-collapse collapse">
               <ul id="ulnav" class="nav navbar-nav navbar-right">
@@ -223,7 +223,7 @@
                 <!-- end .price-table -->
                 <div class="price-table" style="background-color:lightgray">
                   <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div>
-                  <h2 style="font-weight:bold; color:darkred">CERTIFICATES <br />ENTERED</h2>
+                  <h2>CERTIFICATES <br />ENTERED</h2>
                   <div id="certFooter" style="bottom:0; height:3em">
                       <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>
@@ -240,7 +240,7 @@
               <div class="col-md-4">
                 <div class="price-table" style="background-color:lightgray">
                     <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div>
-                    <h2 style="font-weight:bold; color:darkred">TRAINING <br />HOURS</h2>
+                    <h2>TRAINING <br />HOURS</h2>
                     <div id="trainFooter" style="bottom:0; height:3em">
                         <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                             <i class="fa fa-plus-circle"></i>
@@ -257,7 +257,7 @@
               <div class="col-md-4">
                 <div class="price-table" style="background-color:lightgray">
                 <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div>
-                  <h2 style="font-weight:bold; color:darkred">EQUIPMENT <br />PURCHASES</h2>
+                  <h2>EQUIPMENT <br />PURCHASES</h2>
                   <div id="equipFooter" style="bottom:0; height:3em">
                       <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>

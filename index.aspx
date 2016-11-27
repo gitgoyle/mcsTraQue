@@ -41,9 +41,9 @@
         <div class="top section-padding">
           <div class="container">
             <div class="row">
-              <div class="col-sm-5 col-md-5">
+              <!-- <div class="col-sm-5 col-md-5">
                 <div class="photo-slide">
-                 <div id="carousel" class="carousel slide" data-ride="carousel">
+                 <div id="carousel" class="carousel slide" data-ride="carousel"> -->
                   <!--
                   <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -74,9 +74,9 @@
                       <img src="images/tab-slider6.jpg" alt="" />
                     </div>
                   </div> --><!--end .carousel-inner -->
-                </div> <!-- end #carousel -->
-                </div> <!-- end .photo-slide -->
-              </div> <!-- end .top > .container> .row> .col-md-5 -->
+                <!-- </div> end #carousel -->
+                <!-- </div> end .photo-slide -->
+              <!-- </div> end .top > .container> .row> .col-md-5 -->
               <div class="col-sm-12 col-md-12">
                 <div class="content">
                   <%--<h1>TraQue</h1>--%>
@@ -167,7 +167,7 @@
 
     <!-- ====== Screenshots Section ====== -->
     <section id="screenshots">
-      <div class="screenshots section-padding dark-bg" style="padding-top:2em">
+      <div class="screenshots section-padding dark-bg">
         <div class="container">
           <div class="header">
             <h1>Why <strong>T</strong>ra<strong>Q</strong>ue?</h1>
@@ -212,7 +212,7 @@
 
     <!-- ====== Features Section ====== -->
     <section id="features">
-      <div class="features section-padding" style="padding-top:2em">
+      <div class="features section-padding">
         <div class="container">
 
           <div class="header">
@@ -235,7 +235,7 @@
                 <div class="col-sm-6 col-md-6">
                   <div class="featured-item">
                     <div class="icon">
-                      <div class="icon-style"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>
+                      <div class="icon-style"><i class="fa fa-refresh fa-3x fa-fw"></i></div>
                     </div> <!-- end icon -->
                     <div class="meta-text">
                       <h3>Responsive Design</h3>
@@ -319,8 +319,8 @@
         <div class="container">
 
           <div class="header">
-            <h1><strong>What A Great Idea</strong></h1>
-            <p>Meet The TraQue Team</p>
+            <h1>Meet the <strong>T</strong>ra<strong>Q</strong>ue Team</h1>
+            <p>What A Great Idea</p>
             <div class="underline"><i class="fa fa-users"></i></div>
           </div> <!-- end .container> .header -->
 
@@ -421,11 +421,11 @@
     <!-- ====== Team Section ====== -->
     <!-- ====== Price Section ====== -->
     <section id="price">
-      <div class="price section-padding dark-bg" style="padding-top:2em">
+      <div class="price section-padding dark-bg">
         <div class="container">
 
           <div class="header">
-            <h1><strong>TraQue Plans</strong></h1>
+            <h1><strong>T</strong>ra<strong>Q</strong>ue Plans</h1>
             <p>TraQue offers a variety of plans to suit your individual or business needs.  Just learning about TraQue?  Our FREE individual plan is a perfect way to find out how valuable TraQue can be to you.
                 Our PREMIUM individual plan at only $3/month allows you to track unlimited certificate renewals, equipment purchases and training.  If you're part of a business, small or large, the AGENCY tiered
                 plans are perfect to keep your entire organization on track.  Tiered annual pricing allows you to choose the plan that fits your organization with the greatest cost savings.  Scroll down to see the features!</p>
@@ -481,7 +481,7 @@
                           <tr><td>201 - 500 Users $8500/yr ($17/User)</td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td style="padding:5px">
-                            Don't See A Plan That Suits You? <br /> Contact <a class="btn btn-warning" href="mailto:admin@traque.net"><span>TraQue</span></a></td></tr>
+                            Don't See A Plan That Suits You? <br /> Contact <a href="mailto:admin@traque.net"><span>TraQue</span></a></td></tr>
                     </table>
                     <br /><br />
                   <ul style="height:147px">
@@ -510,24 +510,24 @@
               <div>
                 <div class="form-group">
                   <label for="name" class="sr-only">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" placeholder="Name", required>
                 </div> <!-- end .form-group -->
 
                 <div class="form-group">
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email", required>
                 </div> <!-- end .form-group -->
 
                 <div class="form-group">
                   <label for="subject" class="sr-only">Subject</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject", required>
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
 
               <div>
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
+                  <textarea name="message" id="message" placeholder="Message", required></textarea>
                 </div> <!-- end .form-group -->
               </div>
             </div> <!-- end .form> .row -->
