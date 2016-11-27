@@ -50,7 +50,7 @@
                 <div class="content">
                   <%--<h1>TraQue</h1>--%>
                   <h2>AGENCY DASHBOARD</h2>
-<%--                    
+<%--
                     <ul class="social-network social-circle">
                         <li><a href="https://www.facebook.com/cjevolution" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a></li>
                         <li><a href="https://twitter.com/TraQueLLC2" target="_blank"" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
@@ -59,14 +59,14 @@
 --%>
                     <br />
                     <div class="col-sm-4" style="background-color:transparent; border:1px solid black; height:200px; text-align:center">Manage Users<br />
-                        <div style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="usrDB" >0</span></div> 
+                        <div style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="usrDB" >0</span></div>
                         <input id="inpFindUser" type="text" placeholder="find user" style="width:80%; margin-right:1em; padding-left:5px; color:blue" /><span><i class="fa fa-search" title="search" style="color:red"></i></span>
                     </div>
                     <div class="col-sm-4" style="background-color:transparent; border:1px solid black; height:200px; text-align:center">Assign Alerts
-                        <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="altDB" >0</span></div> 
+                        <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="altDB" >0</span></div>
                     </div>
                     <div class="col-sm-4" style="background-color:transparent; border:1px solid black; height:200px; text-align:center">Reports
-                        <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="rptDB" >0</span></div> 
+                        <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#ffffff;" id="rptDB" >0</span></div>
                     </div>
                   </div> <!-- end .button -->
                 </div> <!-- end .content -->
@@ -78,7 +78,7 @@
     </header>
     <!-- ====== End Header Section ====== -->
 
-    <!-- ====== Menu Section ====== --> 
+    <!-- ====== Menu Section ====== -->
     <section id="menu">
       <div class="navigation">
         <div id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -91,7 +91,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style="margin-top:-.35em" href="#"><img src="images/logo.png" /></a>
+              <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
             </div> <!-- end .navbar-header -->
 
             <div class="navbar-collapse collapse">
@@ -135,7 +135,7 @@
                   <input type="text" class="form-control" id="subject" placeholder="Subject" />
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
-              
+
               <div class="col-xs-12 col-md-6">
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
@@ -145,7 +145,7 @@
             </div> <!-- end .form> .row -->
 
             <button class="btn btn-default contact-submit custom-btn" type="submit"><i class="fa fa-hand-o-right"></i>SUBMIT</button>
-          </form> <!-- end .form -->   
+          </form> <!-- end .form -->
         </div> <!-- end .container -->
       </div> <!-- end .footer -->
     </footer>
@@ -203,6 +203,6 @@
     <!-- ================= MODALS ================= -->
 
     <!-- ================= MODALS ================= -->
-   
+
 </body>
 </html>

@@ -169,7 +169,7 @@
     <!-- ====== End Menu Section ====== -->
 
     <!-- ====== Profile Section ====== -->
-    <section id="profile" style="padding-top:3em">
+    <section id="profile">
       <div class="description">
         <div class="description-one section-padding">
           <div class="container">

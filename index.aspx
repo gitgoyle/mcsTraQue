@@ -142,7 +142,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style="margin-top:-.35em" href="#"><img src="images/logo.png" /></a>
+              <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
             </div> <!-- end .navbar-header -->
 
             <div class="navbar-collapse collapse">

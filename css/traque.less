@@ -59,6 +59,12 @@ textarea {
 /**
  * Navigation bar
  */
+#main-nav {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
 .navbar-nav {
   a {
     color: @nav-color;
@@ -72,7 +78,7 @@ textarea {
 }
 
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
-  max-height: 370px;
+  max-height: 436px;
 }
 
 /**
@@ -187,6 +193,9 @@ iframe {
 /**
  * Profile
  */
+#profile {
+  margin-top: 120px; // height of navbar
+}
 #icoEditProfile {
   color: @primary-color;
   cursor: pointer;
