@@ -221,7 +221,7 @@
                  <p></p>
             </div> --%>
                 <!-- end .price-table -->
-                <div class="price-table" style="background-color:lightgray">
+                <div class="price-table">
                   <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div>
                   <h2>CERTIFICATES <br />ENTERED</h2>
                   <div id="certFooter" style="bottom:0; height:3em">
@@ -238,7 +238,7 @@
               </div> <!-- end .price-list> .col-md-4 (1) -->
 
               <div class="col-md-4">
-                <div class="price-table" style="background-color:lightgray">
+                <div class="price-table">
                     <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div>
                     <h2>TRAINING <br />HOURS</h2>
                     <div id="trainFooter" style="bottom:0; height:3em">
@@ -255,7 +255,7 @@
               </div> <!-- end .price-list> .col-md-4 (2) -->
 
               <div class="col-md-4">
-                <div class="price-table" style="background-color:lightgray">
+                <div class="price-table">
                 <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div>
                   <h2>EQUIPMENT <br />PURCHASES</h2>
                   <div id="equipFooter" style="bottom:0; height:3em">
