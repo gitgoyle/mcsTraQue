@@ -327,7 +327,7 @@
           <div class="row">
             <div class="app-dev">
 
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
+              <div class="col-sm-6 col-md-6 col-lg-6 info">
                 <div class="member">
                   <img src="images/team1.jpg" alt="" />
                   <div class="details">
@@ -348,7 +348,7 @@
                 </div> <!-- end .title -->
               </div> <!-- end .info (1) -->
 
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
+              <div class="col-sm-6 col-md-6 col-lg-6 info">
                 <div class="member">
                   <img src="images/team2.jpg" alt="">
                   <div class="details">
@@ -368,50 +368,6 @@
                   <h5>Co-Founder</h5>
                 </div> <!-- end .title -->
               </div> <!-- end .info (2) -->
-
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
-                <div class="member">
-                  <img src="images/team3.jpg" alt="">
-                  <div class="details">
-                    <p>Kelly is an experienced finance and business professional</p>
-                    <div class="social icon">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      </ul>
-                    </div> <!-- end .icon -->
-                  </div> <!-- end .details -->
-                </div> <!-- end .member -->
-                <div class="title">
-                  <h4>Kelly Arnold</h4>
-                  <h5>Marketing</h5>
-                </div> <!-- end .title -->
-              </div> <!-- end .info (2) -->
-
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
-                <div class="member">
-                  <img src="images/cozmek.png" alt="cozmek solutions, llc" style="height:300px; width:300px">
-                  <div class="details">
-                    <p>Mike is an experienced software developer and founder of Cozmek Solutions, LLC</p>
-                    <div class="social icon">
-                      <ul>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                      </ul>
-                    </div> <!-- end .icon -->
-                  </div> <!-- end .details -->
-                </div> <!-- end .member -->
-                <div class="title">
-                  <h4>Mike Salvidio</h4>
-                  <h5>Development and Technology</h5>
-                </div> <!-- end .title -->
-              </div> <!-- end .info (2) -->
-
-
             </div> <!-- end .app-dev -->
           </div> <!-- end .container> .row -->
 
