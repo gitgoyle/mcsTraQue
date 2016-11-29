@@ -216,7 +216,7 @@ Public Class member
 
         'parmFinal = localStorage.getItem("traqid") + "|" + localStorage.getItem("traquser") + "|" + varIn(type) + "|nodata|"; 0 1 2 3
         'parmFinal += $("#inpNotes").val() + "|" + $("#inpDate").val() (renewal, training, purchase dates) + "|" + $("#inpTitle").val() + "|"; 4 5 6
-        'parmFinal += $("#inpCategory option:selected").text() + "|" + $("#inpNotificationType option:selected").text(); 7 8 
+        'parmFinal += $("#inpCategory option:selected").text() + "|" + $("#inpNotificationType option:selected").text(); 7 8
         'parmFinal += $("purchaseAmount").val(); 9
 
         Select Case sType
@@ -262,21 +262,21 @@ Public Class member
 
         Dim sTbl As String
         Dim sFlds As String
-        Dim sColHeader As String = "<th style='visibility:hidden'>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th>"
+        Dim sColHeader As String = "<th style='visibility:hidden'>&nbsp;</th><th>Edit</th><th>Delete</th>"
         Dim sType As String = arrParms(1).ToString.ToUpper
 
         If sType = "CERT" Then
             sTbl = "traqCerts"
             sFlds = "certID, title, convert(varchar, certrenewal, 107) certRenewal, notes, certtype, notificationtype, convert(varchar, addedon, 107) addedOn, files "
-            sColHeader = sColHeader & "<th>TITLE</th><th>RENEWAL</th><th class='editRow'>NOTES</th><th class='editRow'>CERT TYPE</th><th class='editRow'>Alert Type</th><th class='editRow'>Added On</th><th class='editRow'>Attached</th>"
+            sColHeader = sColHeader & "<th>Title</th><th>Renewal</th><th class='editRow'>Notes</th><th class='editRow'>Cert Type</th><th class='editRow'>Alert Type</th><th class='editRow'>Added On</th><th class='editRow'>Attached</th>"
         ElseIf stype = "TRAIN" Then
             sTbl = "traqTraining"
             sFlds = "trnID, title, convert(varchar, traindate, 107) trainDate, notes, trnHours, convert(varchar, addedon, 107) addedOn, files, 'train' "
-            sColHeader = sColHeader & "<th>TITLE</th><th>TRAINED</th><th>NOTES</th><th>HOURS</th><th>Added On</th><th>Attached</th>"
+            sColHeader = sColHeader & "<th>Title</th><th>Trained</th><th>Notes</th><th>Hours</th><th>Added On</th><th>Attached</th>"
         Else
             sTbl = "traqEquipment"
             sFlds = "eqID, eqtitle, convert(varchar, eqpurchasedate, 107) eqPurchaseDate, eqnotes, eqAmount, convert(varchar, addedon, 107) addedOn, eqFiles,'equip' "
-            sColHeader = sColHeader & "<th>TITLE</th><th>PURCHASED</th><th>NOTES</th><th>AMOUNT</th><th>Added On</th><th>Attached</th>"
+            sColHeader = sColHeader & "<th>Title</th><th>Purchased</th><th>Notes</th><th>Amount</th><th>Added On</th><th>Attached</th>"
         End If
 
         '0=traqid, 1=tabletype
@@ -288,7 +288,7 @@ Public Class member
         For cnt As Integer = 0 To dtItems.Rows.Count - 1
             tblReturn = tblReturn & "<tr>"
             tblReturn = tblReturn & "<td id='id_" & dtItems.Rows(cnt).Item(0).ToString & "' style='visibility:hidden'>" & dtItems.Rows(cnt).Item(0).ToString & "</td>" &
-                                    "<td class='tblEditItem' title='modify'><i class='fa fa-edit fa-2x'></i></td><td class='tblDeleteItem' title='delete'><i class='fa fa-trash fa-2x'></i></td>" &
+                                    "<td class='tblEditItem' title='Edit item'><i class='fa fa-edit fa-2x'></i></td><td class='tblDeleteItem' title='Delete Item'><i class='fa fa-trash fa-2x'></i></td>" &
                                     "<td>" & dtItems.Rows(cnt).Item(1).ToString & "</td><td>" & dtItems.Rows(cnt).Item(2).ToString & "</td>" &
                                     "<td class='editRow'>" & dtItems.Rows(cnt).Item(3).ToString & "</td><td class='editRow'>" & dtItems.Rows(cnt).Item(4).ToString & "</td>" &
                                     "<td class='editRow'>" & dtItems.Rows(cnt).Item(5).ToString & "</td><td class='editRow'>" & dtItems.Rows(cnt).Item(6).ToString & "</td>" &

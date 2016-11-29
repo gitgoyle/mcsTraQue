@@ -153,10 +153,10 @@
 
             <div class="navbar-collapse collapse">
               <ul id="ulnav" class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#top">Home</a></li>
+                <!-- <li class="active"><a href="#top">Home</a></li> -->
+                <!-- <li><a href="#uploads">Uploads</a></li> -->
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#dashboard">Activity</a></li>
-                <li><a href="#uploads">Uploads</a></li>
-                <li><a href="#profile">My Profile</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a id="memberExit" href="#" onclick="fcnSignOut()">Sign Out</a></li>
               </ul>
@@ -449,7 +449,7 @@
             margin-right:auto;
         }
 
-        th {
+        /*th {
             background-color:#FFF;
             font-size:small;
         }
@@ -469,7 +469,7 @@
             font-family:verdana;
             font-weight:bold;
             font-size:x-small;
-        }
+        }*/
 
         .tblEditItem, .tblDeleteItem {
             width:50px;
@@ -490,10 +490,10 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="headerTinyMSGH4" class="modal-title"></h4>
                   </div>
-                  <div class="modal-body" style="background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat;">
-                    <span id="spanTinyMSG" style="color:white"></span>
+                  <div class="modal-body">
+                    <span id="spanTinyMSG"></span>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnTinyMSGClose" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CLOSE</button>
                   </div>
                 </div>
@@ -510,10 +510,10 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="headerMSGH4" class="modal-title">msgModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <span id="spanMSG" style="background-color:#ffffff"></span>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnMSGClose" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CLOSE</button>
                   </div>
                 </div>
@@ -526,12 +526,12 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="promptH4" class="modal-title">promptModal</h4>
+                    <h4 id="promptH4" class="modal-title">Delete Item</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <p id="pTheID">the id is: </p>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnPromptCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CANCEL</button>
                     <button id="btnPromptOK" type="button" class="btn btn-primary">DELETE</button>
                   </div>
@@ -547,8 +547,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="headerEditH4" class="modal-title">modEditModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat;">
-                    <div id="modEditSelect" style="padding:10px;"><table id="tblItemList" style="font-size:x-small"></table></div>
+                  <div class="modal-body">
+                    <div id="modEditSelect"><table id="tblItemList"></table></div>
                   </div>
                 </div>
             </div>
@@ -562,7 +562,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 id="modifyH4" class="modal-title">modModifyModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <p id="pTheModifyID">the id is: </p>
                     <table style="width:60%; margin-left:auto; margin-right:auto">
                         <tr><td>TITLE</td><td><input id="modifyTitle" class="inputPad" title="title" /></td></tr>
@@ -574,7 +574,7 @@
                         <%--<span style="height:50px; width:100px; background-color:#ffffff">&nbsp;<a id="modiFileDelete"><i class="fa fa-trash"></i></a><a id="modiFileView"><i class="fa fa-download"></i></a></span> --%>
                     </table>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnModifyCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CANCEL</button>
                     <button id="btnModifyOK" type="button" class="btn btn-primary">ACCEPT</button>
                   </div>
@@ -590,7 +590,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 id="headerAddH4"  class="modal-title">Add New Item</h4>
               </div>
-              <div class="modal-body" style=" background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat">
+              <div class="modal-body">
                 <!--<p><img src="images/pop.jpg" height="200" width="150" style="float:left; padding-right:8px"/></p> -->
                     <div style="width:100%; margin-left:auto; margin-right:auto; text-align:center">
                     <table id="tblAddModal" style="width:80%">
@@ -611,11 +611,11 @@
                         </tr>
                         <tr>
                             <td id="dateType" class="col-xs-10" style="min-width:140px">Renewal Date</td>
-                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px;" /></td>
+                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" /></td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Title</td>
-                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px;" /></td>
+                            <td><input id="inpTitle" name="addName" placeholder="title" /></td>
                         </tr>
                         <tr id="trPurchaseAmount">
                             <td id="tdAmountHours" class="col-xs-10">Amount</td>
@@ -625,7 +625,7 @@
                         </tr>
                         <tr>
                             <td class="col-xs-10">Notes</td>
-                            <td><textarea id="inpNotes" name="addNotes" placeholder="comments" rows="3" cols="25" style="min-width:250px; max-width:250px; max-height:90px; margin-top:5px"></textarea></td>
+                            <td><textarea id="inpNotes" name="addNotes" placeholder="comments" rows="3" cols="25" style="min-width:250px; max-width:250px; max-height:90px;"></textarea></td>
                         </tr>
                         <tr>
                             <td id="tdAlertType" class="col-xs-10" style="min-width:140px">Alert Type</td>
@@ -651,7 +651,7 @@
                 </div>
                 <%--</p>--%>
               </div>
-              <div class="modal-footer" style="border:none">
+              <div class="modal-footer">
                 <button id="btnAddCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">Close</button>
                 <button id="btnAddSubmit" type="button" class="btn btn-primary">Submit</button>
               </div>

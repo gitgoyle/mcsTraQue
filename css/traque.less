@@ -4,7 +4,7 @@
 @secondary-color: #ED3237;
 
 @primary-bg: #EBF2FA;
-@secondary-bg: #272838;
+@secondary-bg: #272838; // search codebase if you change this color for other instances
 
 @section-padding: 50px;
 @navigation-height: 130px;
@@ -203,7 +203,10 @@ iframe {
   justify-content: center;
 
   .close {
-    color: @primary-color;
+    color: @primary-bg;
+    &:hover {
+      color: @primary-color;
+    }
   }
 
   .modal-content {
@@ -211,6 +214,7 @@ iframe {
   }
 
   .modal-body {
+    background-color: @primary-bg;
     overflow-y: auto;
     input:not(.input-lg), select, textarea {
       width: 250px;
@@ -246,6 +250,36 @@ iframe {
   .prev, .switch, .next , .day, .month {
     &:hover {
       outline: 1px solid @primary-color;
+    }
+  }
+}
+
+#divOverlay { // Attach a file container
+  background-color: @secondary-color; // TODO: Currently not working since it's in an iframe
+}
+
+#modEditModal {
+  th {
+    background-color: @primary-color;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 15px 5px;
+  }
+
+  td {
+    border: 1px solid lightgray;
+    padding: 5px;
+  }
+  .tblEditItem, .tblDeleteItem {
+    &:hover {
+      background-color: @primary-color;
+      border-color: @primary-color;
+      cursor: pointer;
+      i {
+        color: white;
+      }
     }
   }
 }
