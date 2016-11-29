@@ -45,6 +45,7 @@ $(document).ready(function () {
     if (logged == "Y") {
         setSessionVar("s_curuserid:" + sessionStorage.getItem("s_curuserid"));
         if (isTesting == "Y") {
+            alert('got here next');
             window.location.replace("member.aspx#dashboard");
         }
         else {
@@ -57,7 +58,7 @@ $(document).ready(function () {
 
 //start of functions
 function doLogin(parmFinal, callBack) {
-
+    //alert('in here');
     var sRunAjax = $.ajax({
         type: "POST",
         url: '../index.aspx/checkLogin',
@@ -90,12 +91,19 @@ function doLogin(parmFinal, callBack) {
                 $("#divLoginMSG").html("<span>Entering TraQue ...</span>");
                 setTimeout(function () {
                     $("#myLogin").modal('hide');
-                    if (isTesting == "Y") {
-                        window.location.replace("member.aspx#dashboard");
-                    }
-                    else {
-                        window.location.replace("https://www.traque.net/member.aspx#dashboard");
-                    }
+                    if (ret[7] == "TA") {
+                        if (isTesting == "Y") {
+                            window.location.replace("adminDashboard.aspx");
+                        }
+                        else {
+                            window.location.replace("https://www.traque.net/adminDashboard.aspx");
+                        }
+                    } else if (isTesting == "Y") {
+                            window.location.replace("member.aspx#dashboard");
+                        }
+                        else {
+                            window.location.replace("https://www.traque.net/member.aspx#dashboard");
+                        }
                 }, 1000);
             }
         }
