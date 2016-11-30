@@ -1,13 +1,10 @@
 // out: ./traque.css, sourcemap: false, compress: true
+@import "./admin.less";
+@import "./variables.less";
 
-@primary-color: #1f5ca9;
-@secondary-color: #ED3237;
-
-@primary-bg: #EBF2FA;
-@secondary-bg: #272838; // search codebase if you change this color for other instances
-
-@section-padding: 50px;
-@navigation-height: 130px;
+html {
+  background-color: @primary-bg;
+}
 
 #divWelcomeBack {
   display: none; // TODO: Decide if we want this

@@ -42,27 +42,27 @@
                 divname = "adminDB_" + i;
                 if (i <= 4) {
                     el = document.getElementById(divname);
-                    el.style.backgroundColor = "transparent";
+                    // el.style.backgroundColor = "transparent";
                     el.innerHTML = "<i class='fa fa-heart-o fa-2x'></i><br /><b>dashboard " + i + " option</b>";
                 }
                 if (i > 4 && i < 9) {
                     el = document.getElementById(divname);
-                    el.style.backgroundColor = "transparent";
+                    // el.style.backgroundColor = "transparent";
                     el.innerHTML = "<i class='fa fa-heart fa-2x'></i><br /><b>dashboard " + i + " option</b>";
                 }
                 if (i > 8) {
                     el = document.getElementById(divname);
-                    el.style.backgroundColor = "transparent";
+                    // el.style.backgroundColor = "transparent";
                     el.innerHTML = "<i class='fa fa-heartbeat fa-2x'></i><br /><b>dashboard " + i + " option</b>";
                 }
-                if (w < 600) {
-                    el.style.height = "200px";
-                } else if (w < 1000) {
-                    el.style.height = "150px";
-                } else {
-                    el.style.height = "100px";
-                }
-                el.style.padding = "1.25em";
+                // if (w < 600) {
+                //     el.style.height = "200px";
+                // } else if (w < 1000) {
+                //     el.style.height = "150px";
+                // } else {
+                //     el.style.height = "100px";
+                // }
+                // el.style.padding = "1.25em";
             }
         }
 
@@ -78,9 +78,9 @@
     </script>
     <style type="text/css">
 
-        *[id^='adminDB_']:hover {
+        /**[id^='adminDB_']:hover {
             border: 5px solid #808080;
-        }
+        }*/
 
         .tblLabel {
             text-align:right;
@@ -158,13 +158,10 @@
       </div> <!-- end .navigation -->
     </section>
     <!-- ====== End Menu Section ====== -->
-    
+
     <!-- ====== Start Dashboard Section ====== -->
-        <div style="position:relative; z-index:-1">
-            <div class="col-sm-12 col-md-6 col-lg-3" style="top:10em; position:relative; margin-left:auto; margin-right:auto; width:100%; 
-                /*background-image:url('./images/cert.png'); background-repeat:no-repeat;background-size:cover;*/
-                background-color:#b0c4de; padding:10px; 
-                border:1px solid red; text-align:center">
+        <div id="admin">
+            <div class="col-sm-12 col-md-6 col-lg-3">
                 <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div>
                 <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div>
                 <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div>
