@@ -201,6 +201,7 @@
     <Content Include="images\vertical-slider2.png" />
     <Content Include="images\vertical-tab.png" />
     <Content Include="index.aspx" />
+    <Content Include="js\admin.js" />
     <Content Include="js\bootstrap-datepicker.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />

@@ -10,6 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Template Title -->
 
+    <!--scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/admin.js"></script>
+    <!--scripts -->
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap 3.2.0 stylesheet -->
     <link href="css/bootstrap.css" rel="stylesheet" />
@@ -31,6 +36,21 @@
     <link href="css/traque.css" rel="stylesheet" />
 
     <script type="text/javascript">
+        $(document).ready(function () {
+            $("[id^=adminDB_").hover(function () {
+                $("[id^=adminDB_").css("background-color", "transparent");
+                var myid = this.id;
+                $("#" + myid).css({ "background-color": "#DCE5F0", "border-radius": "10px" });
+            });
+
+            $(document).on("click", "[id^='adb_']", function () {
+                var el = this.id;
+                el = el.replace("adb_", "");
+                //alert("total " + el);
+            });
+
+        }); //do not delete
+
 
         function applyBG() {
             var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -38,7 +58,7 @@
             var i = 1;
             var divname="";
             var el = "";
-            for (i = 1; i <= 12; i++) {
+            for (i = 1; i <= 8; i++) {
                 divname = "adminDB_" + i;
                 if (i <= 4) {
                     el = document.getElementById(divname);
@@ -64,6 +84,8 @@
                 }
                 el.style.padding = "1.25em";
             }
+            doGetTotals(function() { console.log('did totals'); });
+
         }
 
         function fcnSignOut() {
@@ -77,9 +99,20 @@
         }
     </script>
     <style type="text/css">
-
+/*
         *[id^='adminDB_']:hover {
-            border: 5px solid #808080;
+            background:yellow;
+        }
+*/
+        th {
+            text-align:center;
+            font-size: 12pt;
+        }
+
+        td {
+            width:50px;
+            border: 1px solid #000;
+            font-size: 10pt;
         }
 
         .tblLabel {
@@ -165,18 +198,18 @@
                 /*background-image:url('./images/cert.png'); background-repeat:no-repeat;background-size:cover;*/
                 background-color:#b0c4de; padding:10px; 
                 border:1px solid red; text-align:center">
-                <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_4" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_5" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_6" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
+                <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div><!--users-->
+                <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total certs tracking -->
+                <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total training tracking -->
+                <div id="adminDB_4" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total equip spend -->
+                <div id="adminDB_5" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+                <div id="adminDB_6" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+                <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+                <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+<%--                <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
                 <div id="adminDB_10" class="col-sm-6 col-md-6 col-lg-3"></div>
                 <div id="adminDB_11" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_12" class="col-sm-6 col-md-6 col-lg-3"></div>
+                <div id="adminDB_12" class="col-sm-6 col-md-6 col-lg-3"></div>--%>
             </div>
         </div>
     <!-- ====== End Dashboard Section ====== -->

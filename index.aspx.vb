@@ -175,4 +175,35 @@ Public Class index
         Return ssReturn
     End Function
 
+    <WebMethod()>
+    Public Shared Function getCTETotals(ByVal vParms As String) As Array
+        Dim ssReturn(0 + 19) As String
+        Dim dteCounts As Data.DataTable
+        Dim arrParms As Array = vParms.Split("|")
+
+        Dim sSQL As String = "select 1 [type], 'Total Users', count(*) from traqmembers where membershiptype <> 'TA' " & _
+                                        " union select 2 [type], 'Free Users', count(*) from traqmembers where membershiptype = 'IF' " & _
+                                        " union select 3 [type], 'Indivual Paying', count(*) from traqmembers where membershiptype = 'IP' " & _
+                                        " union select 4 [type], 'Agency Users', count(*) from traqmembers where membershiptype = 'AG' " & _
+                                        " union select 5 [type], 'Total Certificates', count(*) from traqcerts " & _
+                                        " union select 6 [type], 'Total Training Hours', sum(trnHours) from traqtraining " & _
+                                        " union select 7 [type], 'Total Equipment Spend', sum(eqAmount) TotalSpend from traqequipment " & _
+                                        " order by 1 "
+
+        dteCounts = dtFill(sSQL)
+
+        ssReturn(0) = dteCounts.Rows(0)(2).ToString
+        ssReturn(1) = dteCounts.Rows(1)(2).ToString
+        ssReturn(2) = dteCounts.Rows(2)(2).ToString
+        ssReturn(3) = dteCounts.Rows(3)(2).ToString
+        ssReturn(4) = dteCounts.Rows(4)(2).ToString
+        ssReturn(5) = dteCounts.Rows(5)(2).ToString
+        ssReturn(6) = dteCounts.Rows(6)(2).ToString
+        ssReturn(7) = "STOP"
+
+        dteCounts.Dispose()
+
+        Return ssReturn
+    End Function
+
 End Class
