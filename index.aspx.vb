@@ -206,4 +206,45 @@ Public Class index
         Return ssReturn
     End Function
 
+    <WebMethod()> _
+    Public Shared Function getDashboardDetail(ByVal vParms As String) As Array
+        Dim arrReturn(0 + 1000) As String
+        '0 = type
+        Dim arrParms As Array = vParms.Split("|")
+        Dim sType As String = arrParms(0).ToString.ToUpper
+        Dim sSQL As String = ""
+
+        Select Case sType
+            Case "USERS"
+                sSQL = "select firstname, lastname, uid, uac, membershiptype from traqmembers"
+            Case "FREE"
+                sSQL = "select firstname, lastname, uid, uac, membershiptype from traqmembers where membershiptype = 'IF' "
+            Case "IND"
+                sSQL = "select firstname, lastname, uid, uac, membershiptype from traqmembers where membershiptype = 'IP' "
+            Case "AGENCY"
+                sSQL = "select firstname, lastname, uid, uac, membershiptype from traqmembers where membershiptype = 'AG' "
+            Case "CERTIFICATES"
+                sSQL = "select firstname, lastname, certType,  convert(varchar, addedon,106) addedon, notificationtype from traqmembers tm join traqcerts tc on tm.traqid = tc.traqid "
+            Case "TRAINING"
+                sSQL = "select firstname, lastname, title, trnhours,  convert(varchar, addedon,106) addedon from traqmembers tm join traqtraining tt on tm.traqid = tt.traqid "
+            Case "EQUIPUIPMENT"
+                sSQL = "select firstname, lastname, eqamount, eqtitle,  convert(varchar, addedon,106) addedon from traqmembers tm join traqequipment te on tm.traqid = te.traqid "
+            Case "CUSTOM"
+
+        End Select
+
+        Dim dtAdminDB As Data.DataTable
+        Dim i As Integer = 0
+        dtAdminDB = dtFill(sSQL)
+
+        For i = 0 To dtAdminDB.Rows.Count - 1
+            arrReturn(i) = dtAdminDB.Rows(i)(0) & "²" & dtAdminDB.Rows(i)(1) & "²" & dtAdminDB.Rows(i)(2) & "²" & dtAdminDB.Rows(i)(3) & "²" & dtAdminDB.Rows(i)(4)
+        Next
+
+        arrReturn(i) = "STOP"
+
+        Return arrReturn
+
+    End Function
+
 End Class

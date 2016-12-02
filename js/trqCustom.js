@@ -45,8 +45,11 @@ $(document).ready(function () {
     if (logged == "Y") {
         setSessionVar("s_curuserid:" + sessionStorage.getItem("s_curuserid"));
         if (isTesting == "Y") {
-            alert('got here next');
-            window.location.replace("member.aspx#dashboard");
+            if (localStorage.getItem("plantype") == "TA") {
+                window.location.replace("adminDashboard.aspx");
+            } else {
+                window.location.replace("member.aspx#dashboard");
+            }
         }
         else {
             window.location.replace("https://www.traque.net/member.aspx#dashboard");

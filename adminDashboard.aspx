@@ -13,6 +13,7 @@
     <!--scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/admin.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!--scripts -->
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -46,7 +47,9 @@
             $(document).on("click", "[id^='adb_']", function () {
                 var el = this.id;
                 el = el.replace("adb_", "");
-                //alert("total " + el);
+                doGetDetails(el, function () { console.log('returned details') });
+                $("#headerADB").html(el);
+                $("#modADBModal").modal("show");
             });
 
         }); //do not delete
@@ -56,7 +59,7 @@
             var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
             var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
             var i = 1;
-            var divname="";
+            var divname = "";
             var el = "";
             for (i = 1; i <= 8; i++) {
                 divname = "adminDB_" + i;
@@ -82,11 +85,43 @@
                 } else {
                     el.style.height = "100px";
                 }
-                el.style.padding = "1.25em";
+                el.style.paddingTop = "4px";
+                el.style.padingBottom = "2px";
+                el.style.marginBottom = "10px";
             }
-            doGetTotals(function() { console.log('did totals'); });
+            doGetTotals(function () { console.log('did totals'); });
+        };
 
-        }
+
+        function doGetDetails(vtype, callBack) {
+            var parmFinal = vtype;
+            var sRunAjax = $.ajax({
+                type: "POST",
+                url: '../index.aspx/getDashboardDetail',
+                data: '{"vParms":"' + parmFinal + '"}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    var ret;
+                    ret = data.d;
+                    var arrData = [];
+                    var filler = "";
+                    for (var x = 0; x < ret.length; x++) {
+                        if ( ret[x] == "STOP") {
+                            break;
+                        }
+                        arrData = ret[x].split("²");
+                        filler += "<tr><td>" + arrData[0] + "</td><td>" + arrData[1] + "</td><td>" + arrData[2] + "</td><td>" + arrData[3] + "</td><td>" + arrData[4] + "</td></tr>";
+                    }
+                    filler = "<table>" + filler + "</table>";
+                    $("#bodyADB").html(filler);
+                    if (callBack) {
+                        callBack();
+                    }
+                }
+            })
+        };
 
         function fcnSignOut() {
             localStorage.setItem("isLoggedIn", "N");
@@ -213,8 +248,24 @@
             </div>
         </div>
     <!-- ====== End Dashboard Section ====== -->
-
     </div>
+
+
+        <div id="modADBModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="border:1px solid #707070">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color:#909090">
+                        <button type="button" class="close" data-dismiss="modal" style="text-shadow:none">&times;</button>
+                        <h2 id="headerADB"  class="modal-title"></h2>
+                    </div>
+                    <div id ="bodyADB"   class="modal-body" style="height:400px">
+
+                    </div>
+                    <div class="modal-footer" style="background-color:#909090"></div> 
+                </div>
+            </div>
+        </div>
+
     </form>
 </body>
 </html>
