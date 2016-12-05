@@ -1,0 +1,26 @@
+// main: traque.less
+@import "./variables.less";
+
+#admin {
+  position: relative;
+  z-index: -1;
+  > div {
+    margin-top: 1em;
+    padding: 0;
+    text-align: center;
+    top: @navigation-height;
+    width:100%;
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5vh 0px;
+      &:hover {
+        background-color: @primary-color;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

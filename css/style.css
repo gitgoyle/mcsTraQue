@@ -5,7 +5,7 @@ Author URI: http://aspxtemplates.com/
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
 
 
 
@@ -14,13 +14,13 @@ Author URI: http://aspxtemplates.com/
 ========================================= */
 body
 {
-    background-color: #33033d;
-    color: #FFFFFF;
+    /*background-color: #33033d;
+    color: #FFFFFF;*/
     font-family: 'Roboto' , sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
 }
 h1 {
