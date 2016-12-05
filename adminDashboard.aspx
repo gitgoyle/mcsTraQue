@@ -78,7 +78,7 @@
                     // el.style.backgroundColor = "transparent";
                     el.innerHTML = "<i class='fa fa-heartbeat fa-2x'></i><br /><b>dashboard " + i + " option</b>";
                 }
-<<<<<<< HEAD
+
                 if (w < 600) {
                     el.style.height = "200px";
                 } else if (w < 1000) {
@@ -89,7 +89,7 @@
                 el.style.paddingTop = "4px";
                 el.style.padingBottom = "2px";
                 el.style.marginBottom = "10px";
-=======
+
                 // if (w < 600) {
                 //     el.style.height = "200px";
                 // } else if (w < 1000) {
@@ -98,7 +98,7 @@
                 //     el.style.height = "100px";
                 // }
                 // el.style.padding = "1.25em";
->>>>>>> origin/master
+
             }
             doGetTotals(function () { console.log('did totals'); });
         };
@@ -161,12 +161,12 @@
             border: 1px solid #000;
             font-size: 10pt;
         }
-=======
+
 
         /**[id^='adminDB_']:hover {
             border: 5px solid #808080;
         }*/
->>>>>>> origin/master
+
 
         .tblLabel {
             text-align:right;
@@ -246,7 +246,7 @@
     <!-- ====== End Menu Section ====== -->
 
     <!-- ====== Start Dashboard Section ====== -->
-<<<<<<< HEAD
+
         <div style="position:relative; z-index:-1">
             <div class="col-sm-12 col-md-6 col-lg-3" style="top:10em; position:relative; margin-left:auto; margin-right:auto; width:100%; 
                 /*background-image:url('./images/cert.png'); background-repeat:no-repeat;background-size:cover;*/
@@ -261,7 +261,7 @@
                 <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
                 <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
 <%--                <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
-=======
+
         <div id="admin">
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div>
