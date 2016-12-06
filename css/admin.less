@@ -4,22 +4,41 @@
 #admin {
   position: relative;
   z-index: -1;
-  > div {
-    margin-top: 1em;
-    padding: 0;
+
+  > div { // container
+    @height-top: @navigation-height + @margin-top;
+    @margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: ~"calc(100vh - @{height-top})";
+    margin-top: @margin-top;
+    padding: 0 1vw;
     text-align: center;
     top: @navigation-height;
-    width:100%;
+    width: 100%;
+
     > div {
       align-items: center;
+      background-color: white;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 5vh 0px;
-      &:hover {
-        background-color: @primary-color;
-        color: white;
-        cursor: pointer;
+      margin: 0 1vw 4vh 1vw;
+      width: 22.5vw;
+
+      @media (max-width: 768px) {
+        width: 45vw;
+      }
+
+      table {
+        width: 100%;
+
+        td:hover {
+          background-color: @primary-color;
+          color: white;
+          cursor: pointer;
+        }
       }
     }
   }

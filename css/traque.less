@@ -6,6 +6,10 @@ html {
   background-color: @primary-bg;
 }
 
+body {
+  background-color: transparent; // needed for small screens in the admin view
+}
+
 #divWelcomeBack {
   display: none; // TODO: Decide if we want this
 }
@@ -255,7 +259,7 @@ iframe {
   background-color: @secondary-color; // TODO: Currently not working since it's in an iframe
 }
 
-#modEditModal {
+#modEditModal, #modADBModal {
   th {
     background-color: @primary-color;
     border: 1px solid transparent;

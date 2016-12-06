@@ -39,9 +39,9 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("[id^=adminDB_").hover(function () {
-                $("[id^=adminDB_").css("background-color", "transparent");
-                var myid = this.id;
-                $("#" + myid).css({ "background-color": "#DCE5F0", "border-radius": "10px" });
+                // $("[id^=adminDB_").css("background-color", "transparent");
+                // var myid = this.id;
+                // $("#" + myid).css({ "background-color": "#DCE5F0", "border-radius": "10px" });
             });
 
             $(document).on("click", "[id^='adb_']", function () {
@@ -79,17 +79,6 @@
                     el.innerHTML = "<i class='fa fa-heartbeat fa-2x'></i><br /><b>dashboard " + i + " option</b>";
                 }
 
-                if (w < 600) {
-                    el.style.height = "200px";
-                } else if (w < 1000) {
-                    el.style.height = "150px";
-                } else {
-                    el.style.height = "100px";
-                }
-                el.style.paddingTop = "4px";
-                el.style.padingBottom = "2px";
-                el.style.marginBottom = "10px";
-
                 // if (w < 600) {
                 //     el.style.height = "200px";
                 // } else if (w < 1000) {
@@ -97,8 +86,9 @@
                 // } else {
                 //     el.style.height = "100px";
                 // }
-                // el.style.padding = "1.25em";
-
+                // el.style.paddingTop = "4px";
+                // el.style.padingBottom = "2px";
+                // el.style.marginBottom = "10px";
             }
             doGetTotals(function () { console.log('did totals'); });
         };
@@ -145,12 +135,11 @@
         }
     </script>
     <style type="text/css">
-<<<<<<< HEAD
-/*
-        *[id^='adminDB_']:hover {
+        /*[id^='adminDB_']:hover {
             background:yellow;
-        }
-*/
+            border: 5px solid #808080;
+        }*/
+
         th {
             text-align:center;
             font-size: 12pt;
@@ -161,12 +150,6 @@
             border: 1px solid #000;
             font-size: 10pt;
         }
-
-
-        /**[id^='adminDB_']:hover {
-            border: 5px solid #808080;
-        }*/
-
 
         .tblLabel {
             text-align:right;
@@ -247,53 +230,37 @@
 
     <!-- ====== Start Dashboard Section ====== -->
 
-        <div style="position:relative; z-index:-1">
-            <div class="col-sm-12 col-md-6 col-lg-3" style="top:10em; position:relative; margin-left:auto; margin-right:auto; width:100%; 
-                /*background-image:url('./images/cert.png'); background-repeat:no-repeat;background-size:cover;*/
-                background-color:#b0c4de; padding:10px; 
-                border:1px solid red; text-align:center">
-                <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div><!--users-->
-                <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total certs tracking -->
-                <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total training tracking -->
-                <div id="adminDB_4" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total equip spend -->
-                <div id="adminDB_5" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
-                <div id="adminDB_6" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
-                <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
-                <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
-<%--                <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
-
-        <div id="admin">
-            <div class="col-sm-12 col-md-6 col-lg-3">
-                <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_4" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_5" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_6" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
->>>>>>> origin/master
-                <div id="adminDB_10" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_11" class="col-sm-6 col-md-6 col-lg-3"></div>
-                <div id="adminDB_12" class="col-sm-6 col-md-6 col-lg-3"></div>--%>
-            </div>
-        </div>
-    <!-- ====== End Dashboard Section ====== -->
+    <div id="admin">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div id="adminDB_1" class="col-sm-6 col-md-6 col-lg-3"></div><!--users-->
+        <div id="adminDB_2" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total certs tracking -->
+        <div id="adminDB_3" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total training tracking -->
+        <div id="adminDB_4" class="col-sm-6 col-md-6 col-lg-3"></div><!-- total equip spend -->
+        <div id="adminDB_5" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+        <div id="adminDB_6" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+        <div id="adminDB_7" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+        <div id="adminDB_8" class="col-sm-6 col-md-6 col-lg-3"></div><!-- -->
+        <!-- <div id="adminDB_9" class="col-sm-6 col-md-6 col-lg-3"></div>
+        <div id="adminDB_10" class="col-sm-6 col-md-6 col-lg-3"></div>
+        <div id="adminDB_11" class="col-sm-6 col-md-6 col-lg-3"></div>
+        <div id="adminDB_12" class="col-sm-6 col-md-6 col-lg-3"></div> -->
+      </div>
     </div>
+
+    <!-- ====== End Dashboard Section ====== -->
 
 
         <div id="modADBModal" class="modal fade" role="dialog">
             <div class="modal-dialog" style="border:1px solid #707070">
                 <div class="modal-content">
-                    <div class="modal-header" style="background-color:#909090">
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" style="text-shadow:none">&times;</button>
                         <h2 id="headerADB"  class="modal-title"></h2>
                     </div>
                     <div id ="bodyADB"   class="modal-body" style="height:400px">
 
                     </div>
-                    <div class="modal-footer" style="background-color:#909090"></div> 
+                    <!-- <div class="modal-footer"></div> -->
                 </div>
             </div>
         </div>

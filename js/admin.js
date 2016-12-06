@@ -19,13 +19,13 @@
             localStorage.setItem("certTotal", ret[0]);
             localStorage.setItem("trainTotal", ret[1]);
             localStorage.setItem("equipTotal", ret[2]);
-            $("#adminDB_1").html("<i class='fa fa-users fa-2x'></i><table style='width:100%'><tr><th>USERS</th><th>FREE</th><th>IND</th><th>AGENCY</th></tr>" +
+            $("#adminDB_1").html("<i class='fa fa-users fa-2x'></i><table><tr><th>USERS</th><th>FREE</th><th>IND</th><th>AGENCY</th></tr>" +
                                                           "<tr><td id='adb_users'>" + ret[0] + "</td><td id='adb_free'>" + ret[1] + "</td><td id='adb_ind'>" + ret[2] + "</td><td id='adb_agency'>" + ret[3] + "</td></tr></table>");
-            $("#adminDB_2").html("<i class='fa fa-certificate fa-2x'></i><table style='width:100%'><tr><th>CERTIFICATES</tr>" +
+            $("#adminDB_2").html("<i class='fa fa-certificate fa-2x'></i><table><tr><th>CERTIFICATES</tr>" +
                                                           "<tr><td id='adb_certificates'>" + ret[4] + "</td></table>");
-            $("#adminDB_3").html("<i class='fa fa-battery-three-quarters fa-2x'></i><table style='width:100%'><tr><th>TRAINING HOURS</tr>" +
+            $("#adminDB_3").html("<i class='fa fa-battery-three-quarters fa-2x'></i><table><tr><th>TRAINING HOURS</tr>" +
             "<tr><td id='adb_training'>" + ret[5] + "</td></table>");
-            $("#adminDB_4").html("<i class='fa fa-dollar fa-2x'></i><table style='width:100%'><tr><th>EQUIPMENT PURCHASES</tr>" +
+            $("#adminDB_4").html("<i class='fa fa-dollar fa-2x'></i><table><tr><th>EQUIPMENT PURCHASES</tr>" +
             "<tr><td id='adb_equipment'>" + ret[6] + "</td></table>");
             //console.log(ret);
             if (callBack) {
