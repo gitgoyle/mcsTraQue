@@ -52,6 +52,32 @@
                 $("#modADBModal").modal("show");
             });
 
+            $("#btnSearch").click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var srch = $("#inpSearch").val();
+                if (srch.trim == "") {
+                    return true;
+                }
+                //var nbr = parseInt($(this).text());
+                $("#tblModalDetail").find(">tbody > tr").each(function () {
+                    var thisrow = $(this).text();
+                    if (thisrow.indexOf(srch) == -1) {
+                        $(this).css('display', 'none');
+                    }
+                });
+            });
+
+            $("#btnShowAll").click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var srch = $("#inpSearch").val();
+                //var nbr = parseInt($(this).text());
+                $("#tblModalDetail").find(">tbody > tr").each(function () {
+                    $(this).css("display", "table-row");
+                });
+            });
+
         }); //do not delete
 
 
@@ -115,8 +141,8 @@
                         arrData = ret[x].split("²");
                         filler += "<tr><td>" + arrData[0] + "</td><td>" + arrData[1] + "</td><td>" + arrData[2] + "</td><td>" + arrData[3] + "</td><td>" + arrData[4] + "</td></tr>";
                     }
-                    filler = "<table>" + filler + "</table>";
-                    $("#bodyADB").html(filler);
+                    //filler = "<table>" + filler + "</table>";
+                    $("#bodyADB #tblModalDetail").html(filler);
                     if (callBack) {
                         callBack();
                     }
@@ -256,9 +282,15 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" style="text-shadow:none">&times;</button>
                         <h2 id="headerADB"  class="modal-title"></h2>
+                        <section id="sectSearch" style="width:100%">
+                            <input id="inpSearch" type="search" placeholder="search results" />
+                        </section>
+                        <section style="width:50%">
+                            <button id="btnSearch">search</button><button id="btnShowAll">reset</button>
+                        </section>
                     </div>
                     <div id ="bodyADB"   class="modal-body" style="height:400px">
-
+                        <table id="tblModalDetail"></table>
                     </div>
                     <!-- <div class="modal-footer"></div> -->
                 </div>
