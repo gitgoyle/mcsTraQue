@@ -1,0 +1,378 @@
+// out: ./traque.css, sourcemap: false, compress: true
+@import "./admin.less";
+@import "./variables.less";
+
+html {
+  background-color: @primary-bg;
+}
+
+body {
+  background-color: transparent; // needed for small screens in the admin view
+}
+
+#divWelcomeBack {
+  display: none; // TODO: Decide if we want this
+}
+
+a {
+  color: @primary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input, select, textarea {
+  border: 1px solid lightgray;
+  padding: 6px 12px;
+  &:focus {
+    border: 1px solid @primary-color;
+    outline: none;
+  }
+}
+textarea {
+  resize: none;
+}
+
+.dark-bg {
+  background-color: @secondary-bg;
+  color: white;
+}
+
+.tblLabel {
+  color: @primary-color;
+}
+
+.underline {
+  color: @secondary-color;
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  background-color: white;
+  color: @primary-color;
+  font-size: 1.1em;
+  min-width: 100px;
+  &:hover {
+    background-color: @primary-color;
+    color: white;
+    text-decoration: none;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+.btn-info, .btn-primary {
+  background-color: @primary-color;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.custom-btn {
+  border: 1px solid @primary-color;
+}
+
+
+/**
+ * Navigation bar
+ */
+#main-nav {
+  background-color: @primary-bg;
+  left: 0;
+  padding: 1em 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  @media (min-width: 768px) {
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.navbar-nav {
+  a {
+    border: 1px solid transparent;
+    color: black;
+    text-transform: uppercase;
+    &:hover {
+      border: 1px solid black;
+      text-decoration: none;
+    }
+  }
+
+  .active a {
+    background-color: @primary-color;
+    color: white;
+  }
+}
+
+.navbar-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  button {
+    background-color: white;
+    border: 1px solid @primary-color;
+    height: 40px;
+    &:hover {
+      background-color: @primary-color;
+      .icon-bar {
+        background-color: white;
+      }
+    }
+    .icon-bar {
+      background-color: @primary-color;
+    }
+  }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 436px;
+  text-align: center;
+}
+
+/**
+ * First section
+ */
+#top {
+  background-color: @primary-bg;
+  .section-padding {
+    padding-top: @navigation-height;
+  }
+}
+
+/**
+ * Screenshots
+ */
+#screenshots p {
+  font-size: 18px;
+}
+
+/**
+ * Main
+ */
+.section-padding {
+  padding: @section-padding 0;
+}
+
+.top .content {
+  color: black;
+  h2 {
+    display: inline-block;
+  }
+}
+.social-network {
+  float: right;
+  margin-top: 20px;
+  a {
+    color: black;
+  }
+  a.icoTwitter:hover {
+    background-color: #4099ff;
+  }
+}
+
+// TODO: Decide how big we want this
+iframe {
+  @iframe-width: 30vw;
+	height: @iframe-width*.5625;
+	width: 30vw;
+  @media (max-width: 768px) {
+    @iframe-width-responsive: calc(~"100vw - 60px");
+    height: calc(~"@{iframe-width-responsive}*.5625");
+    width: @iframe-width-responsive;
+  }
+}
+
+/**
+ * Modals
+ */
+.modal {
+  background: fade(black, 30%);
+}
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+
+  .close {
+    color: @primary-bg;
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .modal-body {
+    background-color: @primary-bg;
+    overflow-y: auto;
+    input:not(.input-lg), select, textarea {
+      width: 250px;
+    }
+    .input-lg {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 90vw; // TODO: Make a small and a large style modal
+    table {
+      width: 100%;
+    }
+  }
+}
+// small modals
+#modAddModal, #myLogin, #myFreeSignUp, #myIndPremium, #myAgency {
+  .modal-dialog {
+    @media (min-width: 768px) {
+      width: 600px;
+    }
+  }
+}
+
+.datepicker {
+  width: 250px;
+  .active {
+    background-color: @primary-color;
+    color: white;
+  }
+  .prev, .switch, .next , .day, .month {
+    &:hover {
+      outline: 1px solid @primary-color;
+    }
+  }
+}
+
+#divOverlay { // Attach a file container
+  background-color: @secondary-color; // TODO: Currently not working since it's in an iframe
+}
+
+#modEditModal, #modADBModal {
+  th {
+    background-color: @primary-color;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 15px 5px;
+  }
+
+  td {
+    border: 1px solid lightgray;
+    padding: 5px;
+  }
+  .tblEditItem, .tblDeleteItem {
+    &:hover {
+      background-color: @primary-color;
+      border-color: @primary-color;
+      cursor: pointer;
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+/**
+ * Login
+ */
+#myLogin table { // TODO: This proably shouldn't be a table
+  width: initial;
+}
+#divLoginMSG {
+  color: @primary-color;
+}
+
+/**
+ * Team members
+ */
+#team {
+  background-color: @primary-bg;
+}
+.team .member .details {
+  background-color: fade(@primary-color, 90%);
+  p {
+    padding-top: 40px; // TODO: Make these centered
+  }
+}
+
+/**
+ *.Plans
+ */
+#price {
+  .featured-price {
+    margin-top: 5em;
+  }
+  .price-table {
+    background-color: @primary-color;
+    height: 500px;
+    margin-bottom: 25px;
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .rate, .buy-now {
+      background-color: @secondary-color;
+    }
+    .buy-now:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/**
+ * Dashboard
+ */
+#dashboard {
+  h2 {
+    color: @primary-color;
+  }
+  .container {
+    padding: 3em 0;
+  }
+  .price-table {
+    background-color: @primary-bg;
+  }
+}
+
+/**
+ * Profile
+ */
+#profile {
+  margin-top: @navigation-height;
+}
+#icoEditProfile {
+  color: @primary-color;
+  cursor: pointer;
+}
+
+/**
+ * Contact Us
+ */
+#contact .container {
+  max-width: 400px;
+  textarea {
+    width: 100%;
+  }
+}
+
+.copyright {
+  background-color: @primary-bg;
+  p {
+    margin: 0;
+  }
+}

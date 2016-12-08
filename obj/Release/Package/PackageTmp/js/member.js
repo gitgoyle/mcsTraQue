@@ -3,7 +3,6 @@ var activeEdit;
 var activeItemID;
 
 $(document).ready(function () {
-
     $("#divWelcomeBack").html("<strong>Welcome back </strong> " + localStorage.getItem("username"));
 
     $('#inpDate').datepicker({
@@ -23,17 +22,17 @@ $(document).ready(function () {
             ifrBtnClick();
             $(".modal-body").css("height", "23em");
         } else if (myID.indexOf("Train") > 1) {
-            $("#headerAddH4").html("Add Training");
+            $("#headerAddH4").html("Add New Training");
             activeAdd = "TRAIN";
             $("#spanFileName").html("");
             ifrBtnClick();
-            $(".modal-body").css("height", "20em");
+            // $(".modal-body").css("height", "20em");
         } else {
-            $("#headerAddH4").html("Add Equipment Purchase");
+            $("#headerAddH4").html("Add New Equipment Purchase");
             activeAdd = "EQUIP";
             $("#spanFileName").html("");
             ifrBtnClick();
-            $(".modal-body").css("height", "20em");
+            // $(".modal-body").css("height", "20em");
         }
         //console.log('adding ' + activeAdd);
     });
@@ -50,13 +49,13 @@ $(document).ready(function () {
         }
 
         if (activeEdit == "CERT") {
-            $("#headerEditH4").html("Edit Certificate");
+            $("#headerEditH4").html("Select Certificate");
             activeEdit = "CERT";
         } else if (activeEdit == "TRAIN") {
-            $("#headerEditH4").html("Edit Training");
+            $("#headerEditH4").html("Select Training");
             activeEdit = "TRAIN";
         } else if (activeEdit == "EQUIP") {
-            $("#headerEditH4").html("Edit Equipment Purchase");
+            $("#headerEditH4").html("Select Equipment Purchase");
             activeEdit = "EQUIP";
         }
         loadAllItems(activeEdit, function () { return });
@@ -64,7 +63,7 @@ $(document).ready(function () {
     });
 
 
-    $("#btnAddSubmit").click(function (e) {
+    $("#btnAddSubmit").click(function () {
         //console.log('submitted ' + activeAdd);
         saveSubmission(function () {
             $("#spanTinyMSG").html("<i class='fa fa-check fa-3x'></i><br />" + activeAdd + '<br /> saved!');
@@ -107,7 +106,7 @@ $(document).ready(function () {
             modifyPrompt(fc, pass, function () { return; });
         }
     });
-    
+
     $("#btnPromptOK").click(function () {
         //deleting an entry
         var parmFinal;
@@ -192,6 +191,7 @@ function saveSubmission(callBack, varIn) {
                     $("#modAddModal").modal("hide");
                     ifrUploadFile();
                     //$("#btnFileUpload").trigger("click");
+                    $("#btnTinyMSGClose").trigger("click");
                     callBack();
                 }, 1000);
             }
@@ -240,7 +240,17 @@ function loadAllItems(editType, callBack) {
             var ret;
             ret = data.d;
             $("#tblItemList").html(ret[1]);
+            var edittype = "";
+
             if (callBack) {
+                if (activeEdit == "CERT") {
+                    editype = "Certification"
+                } else if (activeEdit == "TRAIN") {
+                    editype = "Training"
+                } else {
+                    editype = "Equipment Purchase"
+                }
+                $("#headerEditH4").html('Select ' + editype );
                 callBack();
             }
         }
@@ -271,7 +281,7 @@ function modifyPrompt(vid, vdata, callBack) {
     myP += vid;
     //$("#pTheModifyID").text(vid + " Press SUBMIT to accept changes or CANCEL to exit without saving");
     $("#modEditModal").modal("hide");
-    $("#modModifyModal").modal("show");
+    $("#modifyH4").html("Edit " + activeEdit);
     if (activeEdit == "CERT") {
         $("#trModCertType").show();
         $("#trAmountHours").hide();
@@ -292,6 +302,7 @@ function modifyPrompt(vid, vdata, callBack) {
     flref = flref.trim();
     $("#modifyFile").attr("href", "userUploads/" + flref);
     $("#modifyFile").css({ "color": "#000", "text-decoration": "none", "font-size": "medium", "font-weight": "bold" });
+    $("#modModifyModal").modal("show");
 
     if (callBack) {
         callBack();

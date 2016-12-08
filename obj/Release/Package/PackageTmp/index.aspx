@@ -10,7 +10,7 @@
     <title>TraQue</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap 3.2.0 stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Font Awesome Icon stylesheet -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Owl Carousel stylesheet -->
@@ -22,6 +22,10 @@
     <link href="css/white.css" rel="stylesheet" type="text/css" />
     <!-- Custom Responsive stylesheet -->
     <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Styles specific to TraQue -->
+    <link href="css/traque.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,9 +41,9 @@
         <div class="top section-padding">
           <div class="container">
             <div class="row">
-              <div class="col-sm-5 col-md-5">
+              <!-- <div class="col-sm-5 col-md-5">
                 <div class="photo-slide">
-                 <div id="carousel" class="carousel slide" data-ride="carousel">
+                 <div id="carousel" class="carousel slide" data-ride="carousel"> -->
                   <!--
                   <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -65,15 +69,15 @@
                     </div>
                     <div class="item next left">
                       <img src="images/tab-slider5.jpg" alt="" />
-                    </div>                    
+                    </div>
                     <div class="item next left">
                       <img src="images/tab-slider6.jpg" alt="" />
                     </div>
                   </div> --><!--end .carousel-inner -->
-                </div> <!-- end #carousel -->
-                </div> <!-- end .photo-slide -->
-              </div> <!-- end .top > .container> .row> .col-md-5 -->
-              <div class="col-sm-11 col-md-11">
+                <!-- </div> end #carousel -->
+                <!-- </div> end .photo-slide -->
+              <!-- </div> end .top > .container> .row> .col-md-5 -->
+              <div class="col-sm-12 col-md-12">
                 <div class="content">
                   <%--<h1>TraQue</h1>--%>
                   <h2>RELAX, WE'VE GOT THIS.</h2>
@@ -94,13 +98,20 @@
                     </li>--%>
                 </ul>
                     <div>
-                  <p style="min-width:440px;margin-left:50px">We know how valuable your time is.  <br />Let TraQue handle all your certification reminders, training schedules and equipment purchases.<br /><br />
+                  <p>We know how valuable your time is.  <br />Let TraQue handle all your certification reminders, training schedules and equipment purchases.<br /><br />
 <%--                      <a href="#" style="text-decoration:none; background-color:transparent; color:cyan !important"><i class="fa fa-video-camera"></i>&nbsp;&nbsp;See TraQue In Action</a>--%>
                     <iframe width="360" height="315" src="https://www.youtube.com/embed/cliUPvNKOEM?rel=0" frameborder="0" allowfullscreen></iframe><br />
 <%--                      <video src="../media/TraQueVideo.mp4" width="300" height="300" controls></video><br /><br />--%>
-                    <a id="aLoginLink" class="btn btn-default btn-custom" data-toggle="modal" data-target="#myLogin"><span style="font-size:medium; color:#000">MEMBERS</span></a>
-                    <a href="#price" class="btn btn-default btn-custom"><span style="font-size:medium; color:#000">JOIN TraQue</span></a>
-
+                    <a id="aLoginLink" class="btn btn-default btn-custom" data-toggle="modal" data-target="#myLogin">
+                      <span>
+                        MEMBERS
+                      </span>
+                    </a>
+                    <a href="#price" class="btn btn-default btn-custom">
+                      <span>
+                        JOIN TraQue
+                      </span>
+                    </a>
                   </p>
                 </div>
                   <%--<div class="button" id="download-app1">
@@ -115,10 +126,10 @@
             </div> <!-- end .top> .container> .row -->
           </div> <!-- end .top> .container -->
         </div> <!-- end .top -->
-      <!--</div> <!-- end .bg-color --> -->
+      <!--</div> <!-- end .bg-color -->
     </header>
     <!-- ====== End Header Section ====== -->
-    <!-- ====== Menu Section ====== --> 
+    <!-- ====== Menu Section ====== -->
     <section id="menu">
       <div class="navigation">
         <div id="main-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -131,7 +142,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" style="margin-top:-.35em" href="#"><img src="images/logo.png" /></a>
+              <a class="navbar-brand" href="#"><img src="images/logo.png" /></a>
             </div> <!-- end .navbar-header -->
 
             <div class="navbar-collapse collapse">
@@ -156,12 +167,12 @@
 
     <!-- ====== Screenshots Section ====== -->
     <section id="screenshots">
-      <div class="screenshots section-padding dark-bg" style="padding-top:2em">
+      <div class="screenshots section-padding dark-bg">
         <div class="container">
           <div class="header">
             <h1>Why <strong>T</strong>ra<strong>Q</strong>ue?</h1>
-            <p>A lapse in certification renewal and continuing education can cost you employment opportunities.  Companies may encourage or require employees to hold certifications 
-                and expired credentials can mean a loss of business.  Let TraQue handle your certification renewal notifications so you are alerted by text and email as renewal dates 
+            <p>A lapse in certification renewal and continuing education can cost you employment opportunities.  Companies may encourage or require employees to hold certifications
+                and expired credentials can mean a loss of business.  Let TraQue handle your certification renewal notifications so you are alerted by text and email as renewal dates
                 approach.  Customized notification schedules conveniently remind you months, weeks and days in advance so you don't have to worry about missing any important dates.</p>
             <div class="underline"><i class="fa fa-universal-access"></i></div>
           </div>
@@ -174,7 +185,7 @@
             </div> <!-- end item -->
             <div class="item">
               <a href="images/medCustomImage.png" data-rel="prettyPhoto"><img src="images/tab-slider2.jpg" alt=""></a>
-              <p style="text-align:center">Medical Professionals</p>  
+              <p style="text-align:center">Medical Professionals</p>
             </div> <!-- end item -->
             <div class="item">
               <a href="images/rrCustomImage.png" data-rel="prettyPhoto"><img src="images/tab-slider3.jpg" height="300" alt=""></a>
@@ -195,13 +206,13 @@
           </div> <!-- end owl carousel -->
 
         </div> <!-- .container -->
-      </div> <!-- end .screenshots -->  
+      </div> <!-- end .screenshots -->
     </section>
     <!-- ====== End Screenshots Section ====== -->
 
     <!-- ====== Features Section ====== -->
     <section id="features">
-      <div class="features section-padding" style="padding-top:2em">
+      <div class="features section-padding">
         <div class="container">
 
           <div class="header">
@@ -224,7 +235,7 @@
                 <div class="col-sm-6 col-md-6">
                   <div class="featured-item">
                     <div class="icon">
-                      <div class="icon-style"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></div>
+                      <div class="icon-style"><i class="fa fa-refresh fa-3x fa-fw"></i></div>
                     </div> <!-- end icon -->
                     <div class="meta-text">
                       <h3>Responsive Design</h3>
@@ -240,7 +251,7 @@
                     </div> <!-- end icon -->
                     <div class="meta-text">
                       <h3>Security</h3>
-                      <p>Our site uses HTTPS (HTTP over SSL).  
+                      <p>Our site uses HTTPS (HTTP over SSL).
                                 This protocol encrypts and decrypts subscriber requests as well as web pages which are delivered from our server.  </p>
                     </div> <!-- end .meta-text -->
                   </div> <!-- end .featured-item -->
@@ -308,15 +319,15 @@
         <div class="container">
 
           <div class="header">
-            <h1><strong>What A Great Idea</strong></h1>
-            <p>Meet The TraQue Team</p>
+            <h1>Meet the <strong>T</strong>ra<strong>Q</strong>ue Team</h1>
+            <p>What A Great Idea</p>
             <div class="underline"><i class="fa fa-users"></i></div>
           </div> <!-- end .container> .header -->
 
           <div class="row">
             <div class="app-dev">
 
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
+              <div class="col-sm-6 col-md-6 col-lg-6 info">
                 <div class="member">
                   <img src="images/team1.jpg" alt="" />
                   <div class="details">
@@ -337,7 +348,7 @@
                 </div> <!-- end .title -->
               </div> <!-- end .info (1) -->
 
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
+              <div class="col-sm-6 col-md-6 col-lg-6 info">
                 <div class="member">
                   <img src="images/team2.jpg" alt="">
                   <div class="details">
@@ -357,50 +368,6 @@
                   <h5>Co-Founder</h5>
                 </div> <!-- end .title -->
               </div> <!-- end .info (2) -->
-
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
-                <div class="member">
-                  <img src="images/team3.jpg" alt="">
-                  <div class="details">
-                    <p>Kelly is an experienced finance and business professional</p>
-                    <div class="social icon">
-                      <ul>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      </ul>
-                    </div> <!-- end .icon -->
-                  </div> <!-- end .details -->
-                </div> <!-- end .member -->
-                <div class="title">
-                  <h4>Kelly Arnold</h4>
-                  <h5>Marketing</h5>
-                </div> <!-- end .title -->
-              </div> <!-- end .info (2) -->
-
-              <div class="col-sm-6 col-md-6 col-lg-3 info">
-                <div class="member">
-                  <img src="images/cozmek.png" alt="cozmek solutions, llc" style="height:300px; width:300px">
-                  <div class="details">
-                    <p>Mike is an experienced software developer and founder of Cozmek Solutions, LLC</p>
-                    <div class="social icon">
-                      <ul>
-                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                      </ul>
-                    </div> <!-- end .icon -->
-                  </div> <!-- end .details -->
-                </div> <!-- end .member -->
-                <div class="title">
-                  <h4>Mike Salvidio</h4>
-                  <h5>Development and Technology</h5>
-                </div> <!-- end .title -->
-              </div> <!-- end .info (2) -->
-
-
             </div> <!-- end .app-dev -->
           </div> <!-- end .container> .row -->
 
@@ -410,13 +377,13 @@
     <!-- ====== Team Section ====== -->
     <!-- ====== Price Section ====== -->
     <section id="price">
-      <div class="price section-padding dark-bg" style="padding-top:2em">
+      <div class="price section-padding dark-bg">
         <div class="container">
 
           <div class="header">
-            <h1><strong>TraQue Plans</strong></h1>
-            <p>TraQue offers a variety of plans to suit your individual or business needs.  Just learning about TraQue?  Our FREE individual plan is a perfect way to find out how valuable TraQue can be to you. 
-                Our PREMIUM individual plan at only $3/month allows you to track unlimited certificate renewals, equipment purchases and training.  If you're part of a business, small or large, the AGENCY tiered 
+            <h1><strong>T</strong>ra<strong>Q</strong>ue Plans</h1>
+            <p>TraQue offers a variety of plans to suit your individual or business needs.  Just learning about TraQue?  Our FREE individual plan is a perfect way to find out how valuable TraQue can be to you.
+                Our PREMIUM individual plan at only $3/month allows you to track unlimited certificate renewals, equipment purchases and training.  If you're part of a business, small or large, the AGENCY tiered
                 plans are perfect to keep your entire organization on track.  Tiered annual pricing allows you to choose the plan that fits your organization with the greatest cost savings.  Scroll down to see the features!</p>
             <div class="underline"><i class="fa fa-flash"></i></div>
           </div> <!-- end .container> .header -->
@@ -424,10 +391,10 @@
           <div class="row">
             <div class="price-list">
 
-              <div class="col-md-4"> 
+              <div class="col-md-4">
                 <div class="price-table featured-price">
                   <div class="rate">$0.00</div>
-                  <h2><i class="fa fa-user"></i>Free Usage</h2>      
+                  <h2><i class="fa fa-user"></i>Free Usage</h2>
 <%--                  <p>Single User, one notification, one upload</p>--%>
                   <ul style="width:80%; text-align:left; margin-left:15%">
                     <li><i class="fa fa-check-circle"></i>One Certification</li>
@@ -441,7 +408,7 @@
                 </div> <!-- end .price-table -->
               </div> <!-- end .price-list> .col-md-4 (1) -->
 
-              <div class="col-md-4"> 
+              <div class="col-md-4">
                 <div class="price-table featured-price">
                   <div class="rate" style="text-align:center">$36/YR<br /><span style="font-size:small">USD</span></div>
                   <h2><i class="fa fa-user-plus"></i>Premium</h2>
@@ -460,7 +427,7 @@
 
               <div class="col-md-4">
                 <div class="price-table featured-price">
-                  <div class="rate" style="text-align:center;">TIERED<br /><span style="font-size:small">ANNUAL</span></div> 
+                  <div class="rate" style="text-align:center;">TIERED<br /><span style="font-size:small">ANNUAL</span></div>
                   <h2><i class="fa fa-group"></i>AGENCY</h2>
                   <p style="font-size:small; text-align:center">All <strong style="font-size:large">Premium</strong> Features For Every Member Of Your Organization</p>
                     <table style="background-color:transparent; margin-left:auto; margin-right:auto; width:90%;height:201px">
@@ -470,7 +437,7 @@
                           <tr><td>201 - 500 Users $8500/yr ($17/User)</td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td style="padding:5px">
-                            Don't See A Plan That Suits You? <br /> Contact <a class="btn btn-warning" href="mailto:admin@traque.net"><span style="color:#000">TraQue</span></a></td></tr>
+                            Don't See A Plan That Suits You? <br /> Contact <a href="mailto:admin@traque.net"><span>TraQue</span></a></td></tr>
                     </table>
                     <br /><br />
                   <ul style="height:147px">
@@ -496,51 +463,44 @@
           <form action="" class="form contact">
 
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="name" class="sr-only">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="text" class="form-control" id="name" placeholder="Name", required>
                 </div> <!-- end .form-group -->
 
                 <div class="form-group">
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" id="email" placeholder="Email", required>
                 </div> <!-- end .form-group -->
 
                 <div class="form-group">
                   <label for="subject" class="sr-only">Subject</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject", required>
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
-              
-              <div class="col-xs-12 col-md-6">
+
+              <div>
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
-                  <textarea name="message" id="message" placeholder="Message"></textarea>
+                  <textarea name="message" id="message" placeholder="Message", required></textarea>
                 </div> <!-- end .form-group -->
               </div>
             </div> <!-- end .form> .row -->
 
             <button class="btn btn-default contact-submit custom-btn" type="submit"><i class="fa fa-hand-o-right"></i>SUBMIT</button>
-          </form> <!-- end .form -->   
+          </form> <!-- end .form -->
         </div> <!-- end .container -->
       </div> <!-- end .footer -->
     </footer>
     <!-- ====== End Contact Section ====== -->
+
     <!-- ====== Copyright Section ====== -->
-    <section class="copyright dark-bg">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-5 col-md-5" style="text-align:center; width:100%">
-        <p><span style="font-size:x-small">&copy; 2016 COZMEK SOLUTIONS, All Rights Reserved</span></p>
-        </div>
-         <div class="col-lg-5 col-md-5">
-        <p><strong style="font-size:small"></strong></p>
-        </div>
-        </div>
-      </div> <!-- end .container -->
+    <section class="copyright">
+      &copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved
     </section>
     <!-- ====== End Copyright Section ====== -->
+
     <!-- jQuery -->
     <!--<script src="http://code.jquery.com/jquery.min.js"></script>-->
     <script src="js/jquery.js"></script>
@@ -584,7 +544,7 @@
           <div id="myLogin" class="modal fade" role="dialog">
             <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content" style="max-width:552px">
+            <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 id="H1"  class="modal-title">Sign In</h4>
@@ -593,30 +553,49 @@
                   <p><img src="images/pop.jpg" height="200" width="150" style="float:left; padding-right:8px"/>
                   <table>
                     <tr>
-                        <td style="text-align:right">User Name&nbsp;&nbsp;</td>
-                        <td><input id="inpUserName" placeholder="email address" style="margin-top:5px; margin-right:5px;padding:3px; border:1px solid lightgray; width:200px" /></td>        
+                      <td>User Name</td>
                     </tr>
                     <tr>
-                        <td style="text-align:right">Password&nbsp;&nbsp;</td>
-                        <td><input id="inpPassword" type="password" placeholder="password"  style="margin-top:5px; border:1px solid lightgray; padding:3px; width:200px"  /></td>
+                      <td>
+                        <input id="inpUserName" placeholder="email address"/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Password
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input id="inpPassword" type="password" placeholder="password"/>
+                      </td>
                     </tr>
                   </table>
                   <%--<input id="divWelcomeBack" style="border:none" /> --%>
                 </p>
               </div>
-              <div class="modal-footer" style="border:none">
-                    <a id="btnLoginCancel" class="btn btn-default btn-custom" data-dismiss="modal"><span style="font-size:medium; color:#000">Close</span></a>
-                    <a id="btnLogin" href="#price" class="btn btn-info"><span style="font-size:medium; color:#000">Enter TraQue</span></a>
-                <%--
-                <button id="_btnLoginCancel" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button id="_btnLogin" type="button" class="btn btn-default">Enter TraQue</button>
-              --%>
-
+              <div class="modal-footer">
+                <a id="btnLoginCancel" class="btn btn-default btn-custom" data-dismiss="modal">
+                  <span>
+                    Close
+                  </span>
+                </a>
+                <a id="btnLogin" href="#price" class="btn btn-info">
+                  <span>
+                    Enter TraQue
+                  </span>
+                </a>
+                <!-- <button id="_btnLoginCancel" type="button" class="btn btn-default" data-dismiss="modal">
+                  Close
+                </button>
+                <button id="_btnLogin" type="button" class="btn btn-default">
+                  Enter TraQue
+                </button> -->
               </div>
               <div id="divLoginMSG" style="width:100%; padding-left:5px"></div>
             </div>
           </div>
-        </div>     
+        </div>
 
         <div id="myFreeSignUp" class="modal fade" role="dialog">
           <div class="modal-dialog">
@@ -627,10 +606,10 @@
                 <h4 id="mod_header_free"  class="modal-title">Single Basic <span style="color:red">FREE</span></h4>
               </div>
               <div class="modal-body">
-                  <input class="input-lg" style="width:80%" id="inpFirstName_free" placeholder="first name" />
-                  <input class="input-lg" style="width:80%" id="inpLastName_free" placeholder="last name" />
-                  <input class="input-lg" style="width:80%" id="inpEmail_free" placeholder="email address" />
-                  <input class="input-lg" style="width:80%" id="inpMobile" placeholder="mobile phone" />
+                  <input class="input-lg" id="inpFirstName_free" placeholder="first name" />
+                  <input class="input-lg" id="inpLastName_free" placeholder="last name" />
+                  <input class="input-lg" id="inpEmail_free" placeholder="email address" />
+                  <input class="input-lg" id="inpMobile" placeholder="mobile phone" />
               </div>
 
                 <div style="width:100%; text-align:center">
@@ -669,9 +648,9 @@
                 <h4 id="mod_header_indpre"  class="modal-title">Single Premium<span style="color:red">$36/YR</span></h4>
               </div>
               <div class="modal-body">
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpFirstName_premium" placeholder="first name" /><br />
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpLastName_premium" placeholder="last name" /><br />
-                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" style="width:80%" id="inpEmail_premium" placeholder="email address" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpFirstName_premium" placeholder="first name" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpLastName_premium" placeholder="last name" /><br />
+                  <span style="color:red; margin-right:5px">required</span><input class="input-lg" id="inpEmail_premium" placeholder="email address" /><br />
               </div>
 
                 <div id="ppIndy" style="width:100%; text-align:center">
@@ -700,12 +679,12 @@
             <div class="modal-content"  style="background-image:url('img/bg22.jpg')">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 id="mod_header_agency"  class="modal-title"></h4>
+                <h4 id="mod_header_agency"  class="modal-title">Agency</h4>
               </div>
               <div class="modal-body">
-                  <input class="input-lg" style="width:80%" id="Text1" placeholder="first name" />
-                  <input class="input-lg" style="width:80%" id="Text2" placeholder="last name" />
-                  <input class="input-lg" style="width:80%" id="Text3" placeholder="email address" />
+                  <input class="input-lg" id="Text1" placeholder="first name" />
+                  <input class="input-lg" id="Text2" placeholder="last name" />
+                  <input class="input-lg" id="Text3" placeholder="email address" />
               </div>
 
             <div id="ppAgency" style="width:100%; text-align:center">
@@ -738,6 +717,6 @@
         </div>             <!--end modal  -->
 
     <!-- ================= MODALS ================= -->
-   
+
 </body>
 </html>

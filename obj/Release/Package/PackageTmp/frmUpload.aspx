@@ -29,8 +29,8 @@
 </head>
 <body>
     <form id="form1" runat="server" style="height:20px; width:150px; background-color:transparent; border:none; outline:none">
-    <div>
-        <div id="divOverlay" onclick="getFileDlg()" style="position:fixed; width:240px; height:20px; margin-top:-2px; border:1px solid white; background-color:#ef9a29; text-align:center">
+    <div style="height: 23px">
+        <div id="divOverlay" onclick="getFileDlg()" style="cursor:pointer; position:fixed; width:250px; height:20px; border:1px solid white; background-color:#272838; text-align:center; color:white">
             <span style="margin-top:10px;">&nbsp;Attach a file to this event&nbsp;</span>
         </div>
         <asp:FileUpload runat="server" ID="fup1" onchange="fileChange()" />

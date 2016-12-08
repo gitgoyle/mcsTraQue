@@ -38,14 +38,18 @@ $(document).ready(function () {
 
     var logged;
     logged = localStorage.getItem("isLoggedIn");
-    
+
     console.log(logged);
     console.log(isTesting);
 
     if (logged == "Y") {
         setSessionVar("s_curuserid:" + sessionStorage.getItem("s_curuserid"));
         if (isTesting == "Y") {
-            window.location.replace("member.aspx#dashboard");
+            if (localStorage.getItem("plantype") == "TA") {
+                window.location.replace("adminDashboard.aspx");
+            } else {
+                window.location.replace("member.aspx#dashboard");
+            }
         }
         else {
             window.location.replace("https://www.traque.net/member.aspx#dashboard");
@@ -57,7 +61,7 @@ $(document).ready(function () {
 
 //start of functions
 function doLogin(parmFinal, callBack) {
-
+    //alert('in here');
     var sRunAjax = $.ajax({
         type: "POST",
         url: '../index.aspx/checkLogin',
@@ -87,15 +91,22 @@ function doLogin(parmFinal, callBack) {
                 sessionStorage.setItem("planType", ret[7]);
                 localStorage.setItem("planType", ret[7]);
                 $("#divWelcomeBack").html('Welcome Back ' + ret[2] + ' ' + ret[3]);
-                $("#divLoginMSG").html("<span style='color:red; font-weight:bold; background-color:#FFF'>Entering TraQue ...</span>");
+                $("#divLoginMSG").html("<span>Entering TraQue ...</span>");
                 setTimeout(function () {
                     $("#myLogin").modal('hide');
-                    if (isTesting == "Y") {
-                        window.location.replace("member.aspx#dashboard");
-                    }
-                    else {
-                        window.location.replace("https://www.traque.net/member.aspx#dashboard");
-                    }
+                    if (ret[7] == "TA") {
+                        if (isTesting == "Y") {
+                            window.location.replace("adminDashboard.aspx");
+                        }
+                        else {
+                            window.location.replace("https://www.traque.net/adminDashboard.aspx");
+                        }
+                    } else if (isTesting == "Y") {
+                            window.location.replace("member.aspx#dashboard");
+                        }
+                        else {
+                            window.location.replace("https://www.traque.net/member.aspx#dashboard");
+                        }
                 }, 1000);
             }
         }

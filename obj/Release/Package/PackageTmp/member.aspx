@@ -11,7 +11,7 @@
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap 3.2.0 stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <!-- Font Awesome Icon stylesheet -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <!-- Owl Carousel stylesheet -->
@@ -25,6 +25,9 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <!-- datepicker-->
     <link href="css/datepicker.css" rel="Stylesheet" />
+
+    <!-- Styles specific to TraQue -->
+    <link href="css/traque.css" rel="stylesheet">
 
     <script type="text/javascript">
         function setProfile() {
@@ -88,7 +91,7 @@
     <style type="text/css">
         .tblLabel {
             text-align:right;
-            color:darkred;
+            /*color:darkred;*/
         }
         .tblLabel span::after {
             content: ":";
@@ -98,16 +101,32 @@
             height:2em;
         }
 
-        .price-list :hover {
-            opacity:.85;
-        }
-
         .inputPad {
             padding-left:5px;
         }
 
         input {
             width: 200px;
+        }
+
+        @media (max-width: 500px) {
+            .editRow {
+                visibility: hidden;
+            }
+            .detailRow {
+                visibility: hidden;
+                display:none;
+            }
+        }
+
+        @media (min-width: 700px) {
+            .editRow {
+                visibility: visible;
+            }
+            .detailRow {
+                visibility: hidden;
+                display:none;
+            }
         }
 
     </style>
@@ -127,17 +146,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href=""><img src="images/logo.png" height="80" width="120" /></a>
+              <a class="navbar-brand" href=""><img src="images/logo.png"/></a>
               <div id="divWelcomeBack" style="position:absolute; background-color:transparent; top:90px; width:260px">&nbsp;</div>
             </div> <!-- end .navbar-header -->
-            <div style="width:50%; float:right; text-align:right"><span id="spWelcome" style="font-size:medium"></span></div>
+            <div style="float:right; text-align:right"><span id="spWelcome" style="font-size:medium"></span></div>
 
             <div class="navbar-collapse collapse">
               <ul id="ulnav" class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#top">Home</a></li>
+                <!-- <li class="active"><a href="#top">Home</a></li> -->
+                <!-- <li><a href="#uploads">Uploads</a></li> -->
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#dashboard">Activity</a></li>
-                <li><a href="#uploads">Uploads</a></li>
-                <li><a href="#profile">My Profile</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a id="memberExit" href="#" onclick="fcnSignOut()">Sign Out</a></li>
               </ul>
@@ -150,7 +169,7 @@
     <!-- ====== End Menu Section ====== -->
 
     <!-- ====== Profile Section ====== -->
-    <section id="profile" style="padding-top:3em">
+    <section id="profile">
       <div class="description">
         <div class="description-one section-padding">
           <div class="container">
@@ -164,10 +183,10 @@
                         <tr><td colspan="3"><i id='icoEditProfile' class="fa fa-edit fa-2x" title="edit profile" style="float:right; visibility:hidden"></i></td></tr>
                         <tr class="tblRow" id="trEmailEdit">
                             <td class="tblLabel"><span>Email</span></td><td style="width:2em">&nbsp</td><td id="tdProfileName" style="text-align:left; padding:3px"><span>profile name here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
-                        </tr>                            
+                        </tr>
                         <tr class="tblRow" id="trFullNameEdit">
                             <td class="tblLabel"><span>Full Name</span></td><td style="width:2em">&nbsp</td><td id="tdFullName" style="text-align:left; padding:3px"><span>full name here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
-                        </tr>                            
+                        </tr>
                         <tr class="tblRow" id="trPlanEdit">
                             <td class="tblLabel"><span>Plan</span></td><td style="width:2em">&nbsp</td><td id="tdPlan" style="text-align:left; padding:3px"><span>selected plan here</span></td><%--<td><span><i class="fa fa-edit fa-2x"></i></span></td>--%>
                         </tr>
@@ -191,27 +210,26 @@
             <!--<h1>DASHBOARD</h1>-->
             <%--<div class="underline"><i class="fa fa-dashboard"></i></div>--%>
           </div> <!-- end .container> .header -->
-            <br /><br /><br />
           <div class="row">
             <div class="price-list">
-              <div class="col-md-4"> 
+              <div class="col-md-4">
             <!--
                 <div class="price-table" > style="background-image:url('../images/cert.png')"
-                  <div class="rate"><span style="font-size:xx-large">0</span></div> 
+                  <div class="rate"><span style="font-size:xx-large">0</span></div>
                   <h2 style="background-color:#000; opacity:.75; font-weight:bold; border-radius:10px; padding:5px">CERTIFICATES</h2><br /><br />
-                 <h2></h2> 
+                 <h2></h2>
                  <p></p>
             </div> --%>
                 <!-- end .price-table -->
-                <div class="price-table" style="background-color:lightgray">
-                  <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div> 
-                  <h2 style="font-weight:bold; color:darkred">CERTIFICATES <br />ENTERED</h2>
+                <div class="price-table">
+                  <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanCertCount" >0</span></div>
+                  <h2>CERTIFICATES <br />ENTERED</h2>
                   <div id="certFooter" style="bottom:0; height:3em">
-                      <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                      <a href="#" id="addCert" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>
                           ADD
                       </a>
-                      <a href="#" id="editCert" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                      <a href="#" id="editCert" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                           <i class="fa fa-edit"></i>
                           EDIT
                       </a>
@@ -219,16 +237,16 @@
                 </div>
               </div> <!-- end .price-list> .col-md-4 (1) -->
 
-              <div class="col-md-4"> 
-                <div class="price-table" style="background-color:lightgray">
-                    <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div> 
-                    <h2 style="font-weight:bold; color:darkred">TRAINING <br />HOURS</h2>
+              <div class="col-md-4">
+                <div class="price-table">
+                    <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanTrainCount">0</span></div>
+                    <h2>TRAINING <br />HOURS</h2>
                     <div id="trainFooter" style="bottom:0; height:3em">
-                        <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                        <a href="#" id="addTraining" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                             <i class="fa fa-plus-circle"></i>
                             ADD
                         </a>
-                        <a href="#" id="editTraining" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                        <a href="#" id="editTraining" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                             <i class="fa fa-edit"></i>
                             EDIT
                         </a>
@@ -237,15 +255,15 @@
               </div> <!-- end .price-list> .col-md-4 (2) -->
 
               <div class="col-md-4">
-                <div class="price-table" style="background-color:lightgray">
-                <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div> 
-                  <h2 style="font-weight:bold; color:darkred">EQUIPMENT <br />PURCHASES</h2>
+                <div class="price-table">
+                <div class="rate" style="background-color:transparent; margin-top:1em"><span style="font-size:xx-large; color:#000;" id="spanEquipCount">0</span></div>
+                  <h2>EQUIPMENT <br />PURCHASES</h2>
                   <div id="equipFooter" style="bottom:0; height:3em">
-                      <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal" style="border-radius:10px">
+                      <a href="#" id="addEquipment" class="btn btn-default" data-toggle="modal" data-target="#modAddModal">
                           <i class="fa fa-plus-circle"></i>
                           ADD
                       </a>
-                      <a href="#" id="editEquipment" class="btn btn-default" data-toggle="modal" data-target="#modEditModal" style="border-radius:10px">
+                      <a href="#" id="editEquipment" class="btn btn-default" data-toggle="modal" data-target="#modEditModal">
                           <i class="fa fa-edit"></i>
                           EDIT
                       </a>
@@ -269,7 +287,7 @@
           <form action="" class="form contact">
 
             <div class="row">
-              <div class="col-xs-12 col-md-6">
+              <div>
                 <div class="form-group">
                   <label for="name" class="sr-only">Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Name">
@@ -285,8 +303,8 @@
                   <input type="text" class="form-control" id="subject" placeholder="Subject" />
                 </div> <!-- end .form-group -->
               </div> <!-- end .form> .row> .col-md-4 -->
-              
-              <div class="col-xs-12 col-md-6">
+
+              <div>
                 <div class="form-group">
                   <label for="message" class="sr-only">Message</label>
                   <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -295,24 +313,18 @@
             </div> <!-- end .form> .row -->
 
             <button class="btn btn-default contact-submit custom-btn" type="submit"><i class="fa fa-hand-o-right"></i>SUBMIT</button>
-          </form> <!-- end .form -->   
+          </form> <!-- end .form -->
         </div> <!-- end .container -->
       </div> <!-- end .footer -->
     </footer>
     <!-- ====== End Contact Section ====== -->
 
     <!-- ====== Copyright Section ====== -->
-    <section class="copyright dark-bg">
-      <div class="container">
-      <div class="row">
-      <div class="col-lg-5 col-md-5">
-        <p>&copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved</p>
-        </div>
-
-        </div>
-      </div> <!-- end .container -->
+    <section class="copyright">
+      &copy; 2016 <a href="https://www.traque.net">cozmek solutions, llc</a>, All Rights Reserved
     </section>
     <!-- ====== End Copyright Section ====== -->
+
     <!-- jQuery -->
     <!--<script src="js/jquery.min.js"></script>-->
     <script src="js/jquery.min.js"></script>
@@ -349,7 +361,24 @@
 
             jQuery("#modEditModal").on('hide.bs.modal', function () {
                 doGetCounts(function () { return; })
-            })
+            });
+
+            jQuery("#msgTinyModal").on("show.bs.modal", function (e) {
+                if (e.keyCode == 27) { // escape key maps to keycode `27`
+                    jQuery("#btnTinyMSGClose").trigger("click");
+                    // <DO YOUR WORK HERE>
+                }
+                setTimeout(function () {
+                    jQuery("#btnTinyMSGClose").focus();
+                }, 500);
+            });
+
+            jQuery("#modAddModal").keyup(function (e) {
+                if (e.keyCode == 27) { // escape key maps to keycode `27`
+                    jQuery(this).datepicker('hide');
+                    // <DO YOUR WORK HERE>
+                }
+            });
 
             jQuery('#modAddModal').on('shown.bs.modal', function () {
                 var atype = activeAdd;
@@ -413,14 +442,14 @@
             text-align:left;
             min-width:6em;
         }
-        
+
         #tblAddModal {
             width:60%;
             margin-left:auto;
             margin-right:auto;
         }
 
-        th {
+        /*th {
             background-color:#FFF;
             font-size:small;
         }
@@ -440,7 +469,7 @@
             font-family:verdana;
             font-weight:bold;
             font-size:x-small;
-        }
+        }*/
 
         .tblEditItem, .tblDeleteItem {
             width:50px;
@@ -454,17 +483,17 @@
     </style>
 
     <!-- this is a message from the application -->
-        <div id="msgTinyModal" class="modal fade" style="width:300px;margin-left:auto;margin-right:auto" role="dialog">
+        <div id="msgTinyModal" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:300px" >
                 <div class="modal-content" style="width:300px" >
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="headerTinyMSGH4" class="modal-title">Edit Item</h4>
+                    <h4 id="headerTinyMSGH4" class="modal-title"></h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
-                    <span id="spanTinyMSG" style="background-color:#ffffff"></span>
+                  <div class="modal-body">
+                    <span id="spanTinyMSG"></span>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnTinyMSGClose" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CLOSE</button>
                   </div>
                 </div>
@@ -479,12 +508,12 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="headerMSGH4" class="modal-title">Edit Item</h4>
+                    <h4 id="headerMSGH4" class="modal-title">msgModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <span id="spanMSG" style="background-color:#ffffff"></span>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnMSGClose" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CLOSE</button>
                   </div>
                 </div>
@@ -497,12 +526,12 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="promptH4" class="modal-title">Edit Item</h4>
+                    <h4 id="promptH4" class="modal-title">Delete Item</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <p id="pTheID">the id is: </p>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnPromptCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CANCEL</button>
                     <button id="btnPromptOK" type="button" class="btn btn-primary">DELETE</button>
                   </div>
@@ -516,10 +545,10 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="headerEditH4" class="modal-title">Edit Item</h4>
+                    <h4 id="headerEditH4" class="modal-title">modEditModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
-                    <div id="modEditSelect" style="padding:10px;"><table id="tblItemList" style="font-size:x-small"></table></div>
+                  <div class="modal-body">
+                    <div id="modEditSelect"><table id="tblItemList"></table></div>
                   </div>
                 </div>
             </div>
@@ -531,9 +560,9 @@
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="modifyH4" class="modal-title">Edit Item</h4>
+                    <h4 id="modifyH4" class="modal-title">modModifyModal</h4>
                   </div>
-                  <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat; overflow-y:scroll">
+                  <div class="modal-body">
                     <p id="pTheModifyID">the id is: </p>
                     <table style="width:60%; margin-left:auto; margin-right:auto">
                         <tr><td>TITLE</td><td><input id="modifyTitle" class="inputPad" title="title" /></td></tr>
@@ -542,10 +571,10 @@
                         <tr id="trAmountHours"><td id="modiAmountHours">AMOUNT</td><td><input id="modifyAmount" title="amount" /></td></tr>
                         <tr><td>NOTES</td><td><textarea id="modifyNotes" style="min-width:200px" title="notes"></textarea></td></tr>
                         <tr><td>ATTACHED</td><td><a href="" target="_blank" id="modifyFile"></a></td></tr>
-                        <%--<span style="height:50px; width:100px; background-color:#ffffff">&nbsp;<a id="modiFileDelete"><i class="fa fa-trash"></i></a><a id="modiFileView"><i class="fa fa-download"></i></a></span> --%> 
+                        <%--<span style="height:50px; width:100px; background-color:#ffffff">&nbsp;<a id="modiFileDelete"><i class="fa fa-trash"></i></a><a id="modiFileView"><i class="fa fa-download"></i></a></span> --%>
                     </table>
                   </div>
-                  <div class="modal-footer" style="border:none">
+                  <div class="modal-footer">
                     <button id="btnModifyCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">CANCEL</button>
                     <button id="btnModifyOK" type="button" class="btn btn-primary">ACCEPT</button>
                   </div>
@@ -561,14 +590,14 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 id="headerAddH4"  class="modal-title">Add New Item</h4>
               </div>
-              <div class="modal-body" style="height:20em; background-image:url('images/pop.jpg'); background-position:center; background-size:cover; background-repeat:no-repeat">
+              <div class="modal-body">
                 <!--<p><img src="images/pop.jpg" height="200" width="150" style="float:left; padding-right:8px"/></p> -->
-                    <div style="width:100%; position:absolute; margin-left:auto; margin-right:auto; text-align:center">
+                    <div style="width:100%; margin-left:auto; margin-right:auto; text-align:center">
                     <table id="tblAddModal" style="width:80%">
                         <tr>
                             <td id="tdCategory" class="col-xs-10">Category</td>
                             <td>
-                                <select id="inpCategory" style="width:200px">
+                                <select id="inpCategory">
                                   <option value="0"></option>
                                   <option value="1">IT</option>
                                   <option value="2">Acct/Finance</option>
@@ -582,19 +611,21 @@
                         </tr>
                         <tr>
                             <td id="dateType" class="col-xs-10" style="min-width:140px">Renewal Date</td>
-                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" style="margin-top:5px; border:1px solid lightgray; padding:3px; width:140px" /></td>
+                            <td><input readonly class="datepicker" id="inpDate" name="addDate" type="text" placeholder="renewal date" /></td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Title</td>
-                            <td><input id="inpTitle" name="addName" placeholder="title" style="margin-top:5px; min-width:240px; margin-right:5px;padding-left:5px; border:1px solid lightgray; width:180px" /></td>
+                            <td><input id="inpTitle" name="addName" placeholder="title" /></td>
                         </tr>
                         <tr id="trPurchaseAmount">
                             <td id="tdAmountHours" class="col-xs-10">Amount</td>
-                            <td><input id="purchaseAmount" style="text-align:right;" type="number" /></td>
+                            <td>
+                              <input id="purchaseAmount" type="number"/>
+                            </td>
                         </tr>
                         <tr>
                             <td class="col-xs-10">Notes</td>
-                            <td><textarea id="inpNotes" name="addNotes" placeholder="comments" rows="3" cols="25" style="min-width:250px; max-width:250px; max-height:90px; margin-top:5px"></textarea></td>
+                            <td><textarea id="inpNotes" name="addNotes" placeholder="comments" rows="3" cols="25" style="min-width:250px; max-width:250px; max-height:90px;"></textarea></td>
                         </tr>
                         <tr>
                             <td id="tdAlertType" class="col-xs-10" style="min-width:140px">Alert Type</td>
@@ -620,13 +651,13 @@
                 </div>
                 <%--</p>--%>
               </div>
-              <div class="modal-footer" style="border:none">
+              <div class="modal-footer">
                 <button id="btnAddCancel" type="button" class="btn btn-danger" data-dismiss="modal" data-backdrop="false">Close</button>
                 <button id="btnAddSubmit" type="button" class="btn btn-primary">Submit</button>
               </div>
             </div>
           </div>
-        </div>  
+        </div>
     </form>
 </body>
 </html>

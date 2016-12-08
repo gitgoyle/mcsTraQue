@@ -2,13 +2,13 @@ body {
     background-color: #fff;
     color: #222;
 }
-.dark-bg
+/*.dark-bg
 {
     background-color: #FFECFF;
 }
 h1 {
 	color: #111;
-}
+}*/
 
 .underline:before,
 .underline:after {
@@ -16,7 +16,7 @@ h1 {
 }
 .custom-btn {
 	color: #0099FF;
-	border: 1px solid #0099FF;
+	/*border: 1px solid #0099FF;*/
 }
 .top .content {
 	color: #fff;
@@ -29,7 +29,7 @@ h1 {
 	border-color: #fff;
 }
 
-.navbar-default
+/*.navbar-default
 {
     background-color: #181B3D;
 }
@@ -42,7 +42,7 @@ h1 {
  .navbar-default .navbar-nav>.active>a:focus {
  	background: none;
  	color: #0099FF;
- }
+ }*/
 .featured-item .icon i
 {
     color: #660066;
@@ -60,9 +60,9 @@ h1 {
 .team .member .details p {
 	color: #fff;
 }
-.price .price-table {
+/*.price .price-table {
 	padding:0 30px;
-}
+}*/
 
 .price .price-list ul li i.fa-check
 {

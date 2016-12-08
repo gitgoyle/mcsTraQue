@@ -14,4 +14,3 @@ C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.vbproj.Ge
 C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.dll
 C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.xml
 C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.pdb
-C:\Users\cozmek\dev\traquewbs\slnTraqueWBS\__traque2\obj\Debug\traque2.vbprojResolveAssemblyReference.cache

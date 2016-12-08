@@ -1,11 +1,11 @@
 /* =========================================
-Theme Name: Akshara App 
+Theme Name: Akshara App
 Author URI: http://aspxtemplates.com/
 ========================================= */
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
 
 
 
@@ -14,19 +14,19 @@ Author URI: http://aspxtemplates.com/
 ========================================= */
 body
 {
-    background-color: #33033d;
-    color: #FFFFFF;
+    /*background-color: #33033d;
+    color: #FFFFFF;*/
     font-family: 'Roboto' , sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
 }
 h1 {
 	margin-bottom: 30px;
 	font-size: 60px;
-	color: #fff;
+	/*color: #fff;*/
 	font-weight: 100;
 }
 
@@ -59,7 +59,7 @@ ul li {
 	max-width: 350px;
 	margin: auto;
 	margin-bottom: 80px;
-	color: #33033D;
+	/*color: #33033D;*/
 }
 .underline:before {
 	position: absolute;
@@ -84,16 +84,16 @@ ul li {
     background-color: transparent;
     color: #660066;
     border-radius: 0;
-    border: 2px solid #660066;
+    /*border: 2px solid #660066;*/
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-.custom-btn:hover {
+/*.custom-btn:hover {
 	background-color: #33033D;
 	color: #fff;
 	border-color: #33033D;
-}
+}*/
 .btn:active, .btn.active {
 	outline: none;
 	-webkit-box-shadow: none;
@@ -107,14 +107,14 @@ ul li {
 .header p {
 	margin-bottom: 30px;
 }
-.bg-color {
+/*.bg-color {
 	background: rgba(0, 0, 0, 0.6);
-    height:800px;
+  height:800px;
 }
 .section-padding {
 	padding-top: 100px;
 	padding-bottom:50px;
-}
+}*/
 .carousel-indicators {
 	bottom: -50px;
 }
@@ -144,14 +144,14 @@ ul li {
 }
 .form-control:focus,
 textarea:focus {
-	border-color: #33033D !important;
+	/*border-color: #33033D !important;*/
 	outline: 0;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
 /*===============================
- Icons 
+ Icons
 ====================================*/
 
 .bg-color ul.social-network
@@ -184,10 +184,10 @@ textarea:focus {
     background-color: #3B5998;
 }
 
-.bg-color .social-network a.icoTwitter:hover
+/*.bg-color .social-network a.icoTwitter:hover
 {
     background-color: #660066;
-}
+}*/
 
 .bg-color .social-network a.icoGoogle:hover
 {
@@ -250,7 +250,7 @@ textarea:focus {
 
 .bg-color .social-circle i
 {
-    color: #fff;
+    /*color: #fff;*/
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -258,22 +258,22 @@ textarea:focus {
     transition: all 0.8s;
 }
 
-.bg-color a
+/*.bg-color a
 {
     background: rgba(255, 255, 255, 0.5);
-}
+}*/
 
 
 
 
 /* =========================================
-Section Header                 
+Section Header
 ========================================= */
 header
 {
-    background: url('../images/cert.png') no-repeat fixed 50% 0;
+    /*background: url('../images/cert.png') no-repeat fixed 50% 0;
     background-size: cover;
-    height:800px;
+    height:800px;*/
 }
 .top .photo-slide {
 	max-width: 350px;
@@ -302,7 +302,7 @@ header
 .top .content p
 {
     font-size: 18px;
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;*/
     letter-spacing: 1px;
     margin-top: 30px;
 }
@@ -327,13 +327,13 @@ header
 
 
 /* =========================================
-Section Menu                 
+Section Menu
 ========================================= */
-.navigation {
+/*.navigation {
 	max-height: 2.75em; /*changed mcs 8.22*/
-}
+/*}*/
 
-.navigation .navbar {
+/*.navigation .navbar {
 	border: none;
 	margin-bottom: 0;
 	min-height: 3em;
@@ -347,12 +347,12 @@ Section Menu
 }
 .navigation .navbar-default
 {
-    background-color: rgba(207, 197, 197, 1); /*#33033D;*/
-    box-shadow: 0 0px 10px rgba(0,0,0,.2);
-    border: none;
-    border-radius: 0;
-    clear: both;
-    
+    background-color: rgba(207, 197, 197, 1); /*#33033D;*/*/
+    /*box-shadow: 0 0px 10px rgba(0,0,0,.2);*/
+    /*border: none;*/
+    /*border-radius: 0;*/
+    /*clear: both;
+
 }
 .navigation .navbar-default .navbar-nav>li>a {
 	color: #fff;
@@ -365,7 +365,7 @@ Section Menu
 {
     background: none;
     color: #BF0BE6;
-}
+}*/
 .navigation .btn-default:hover,
 .navigation .btn-default:focus,
 .navigation .btn-default:active,
@@ -377,14 +377,14 @@ h1 i
 {
     padding-right: 20px;
 }
-.header h1
+/*.header h1
 {
     color: #33033d;
-}
+}*/
 
 
 /* =========================================
-Section Features                 
+Section Features
 ========================================= */
 .features .featured-item-img {
 	width: 252px;
@@ -448,11 +448,11 @@ Section Features
 {
     background-image: url('../images/pattern-1.png');
     background-repeat: repeat;
-    
+
 }
 
 /* =========================================
- Section Screenshots                 
+ Section Screenshots
 ========================================= */
 .owl-carousel {
 	margin-bottom: 50px;
@@ -472,7 +472,7 @@ Section Features
 
 /* Styling Next and Prev buttons */
 
-.owl-theme .owl-controls .owl-buttons div{ 
+.owl-theme .owl-controls .owl-buttons div{
 	color: #FFF;
 	display: inline-block;
 	zoom: 1;
@@ -544,7 +544,7 @@ Section Features
 
 
 /* =========================================
-Section Description                 
+Section Description
 ========================================= */
 .description .app-image
 {
@@ -552,9 +552,9 @@ Section Description
     margin: 30px auto 50px auto;
 }
 .description .content h1 {
-	
+
 	color: #33033d;
-	
+
 }
 .description .content h4 {
 	font-size: 28px;
@@ -601,7 +601,7 @@ Section Description
 	margin-bottom: 15px;
 }
 /* =========================================
-Section Testimonial                 
+Section Testimonial
 ========================================= */
 #testimonial {
 	background: url(../images/dashboard2.png) 50% 0 no-repeat fixed;
@@ -650,7 +650,7 @@ Section Testimonial
 }
 
 /* =========================================
-Section Team                 
+Section Team
 ============================================ */
 .team {
 	text-align: center;
@@ -674,7 +674,7 @@ Section Team
 	width: 263px;
 	height: 263px;
 	position: absolute;
-	background: rgba(51, 3, 61, 0.9);
+	/*background: rgba(51, 3, 61, 0.9);*/
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
@@ -738,22 +738,22 @@ Section Team
 }
 
 /* =========================================
- Section Price                 
+ Section Price
 ========================================= */
 .price .price-table
 {
     padding: 0 30px;
     position: relative;
     max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-    background-color: #fff;
-    margin-top: 150px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: 80px;*/
+    /*background-color: #fff;*/
+    /*margin-top: 150px;*/
     color: #FFFFFF;
     background-image: url('../images/pattern-1.png');
     background-repeat: repeat;
-    background-color: #660066;
+    /*background-color: #660066;*/
 }
 .price .header .underline {
 	margin-bottom: 10px;
@@ -803,8 +803,8 @@ Section Team
 	color: #e74c3c;
 }
 .price .price-list .rate {
-	background: #33033D;
-	color: #fff;
+	/*background: #33033D;
+	color: #fff;*/
 	font-size: 40px;
 	text-align: center;
 	padding: 60px 0;
@@ -819,24 +819,24 @@ Section Team
 }
 .price .price-list .buy-now {
 	border: 1px solid transparent;
-	background: #31870e;
+	/*background: #31870e;*/
 	padding: 10px 30px;
 	border-radius: 0;
 	font-size: 20px;
 	margin-bottom: 30px;
-	color: #fff;
+	/*color: #fff;*/
 	position: absolute;
 	left: 50%;
 	bottom: -55px;
 	margin-left: -75px;
 }
-.price .featured-price .rate,
+/*.price .featured-price .rate,
 .price .featured-price .buy-now {
 	background: #e74c3c;
-}
+}*/
 
 /* =========================================
- Section Subscribe                 
+ Section Subscribe
 ========================================= */
 .subscribe {
 	text-align: center;
@@ -899,7 +899,7 @@ Section Team
 }
 
 /* =========================================
- Section Download                 
+ Section Download
 ========================================= */
 #download {
 	background: url(images/bg5.jpg) 50% 0 no-repeat fixed;
@@ -952,7 +952,7 @@ Section Team
 }
 
 /* =========================================
-Section Footer                 
+Section Footer
 ========================================= */
 
 .footer {
@@ -994,19 +994,19 @@ Section Footer
 }
 
 /* =========================================
- Section Copyright                 
+ Section Copyright
 ========================================= */
 .copyright
 {
     text-align: center;
     padding: 30px 0;
-    background-color:darkgray !important;    /*#660066 !important;*/
-    color: #000;
-    text-shadow:none;
+    /*background-color:darkgray !important;    /*#660066 !important;*/*/
+    /*color: #000;*/
+    /*text-shadow:none;*/
     font-size:small;
 }
 .copyright a
 {
-    color: #e74c3c;
+    /*color: #e74c3c;*/
     font-weight: bold;
 }
