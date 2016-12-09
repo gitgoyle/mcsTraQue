@@ -44,6 +44,14 @@
                 // $("#" + myid).css({ "background-color": "#DCE5F0", "border-radius": "10px" });
             });
 
+            $("#_spanADBModal").click(function () {
+                getRowCount();
+            });
+
+            jQuery("#modADBModal").on("shown.bs.modal", function () {
+                $("#inpSearch").focus();
+            });
+
             $(document).on("click", "[id^='adb_']", function () {
                 var el = this.id;
                 el = el.replace("adb_", "");
@@ -62,6 +70,8 @@
                 //var nbr = parseInt($(this).text());
                 $("#tblModalDetail").find(">tbody > tr").each(function () {
                     var thisrow = $(this).text();
+                    thisrow = thisrow.toUpperCase();
+                    srch = srch.toUpperCase();
                     if (thisrow.indexOf(srch) == -1) {
                         $(this).css('display', 'none');
                     }
@@ -76,9 +86,28 @@
                 $("#tblModalDetail").find(">tbody > tr").each(function () {
                     $(this).css("display", "table-row");
                 });
+                $("#inpSearch").val("");
+                $("#inpSearch").focus();
             });
 
         }); //do not delete
+
+        function getRowCount() {
+            var rowcount = 0;
+            var rowdata = "";
+            $("#tblModalDetail").find(">tbody > tr").each(function () {
+                if ($(this).is(":visible")) {
+                    rowcount++
+                    $(this).find("td").each(function () {
+                        rowdata += '°' + $(this).text() + '°,';
+                    });
+                    rowdata = rowdata.substring(0, rowdata.length - 1);
+                    rowdata += "²";
+                }
+            });
+            //alert(rowcount);
+            exportRowdata(rowdata, function () { console.log('data exported'); });
+        }
 
 
         function applyBG() {
@@ -119,6 +148,33 @@
             doGetTotals(function () { console.log('did totals'); });
         };
 
+
+        function exportRowdata(vrowdata, callBack) {
+            var parmFinal = vrowdata;
+            parmFinal = '' + parmFinal + '';
+            var sRunAjax = $.ajax({
+                type: "POST",
+                url: '../index.aspx/makeExportFile',
+                data: '{"vParms":"' + parmFinal + '"}',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                async: false,
+                success: function (data) {
+                    var xdat = [];
+                    xdat = data.d;
+                    if (xdat[0] == "OK") {
+                        $("#aDownFile").attr("href", xdat[1]);
+                        $("#aDownFile").html("view file");
+                    } else {
+                        $("#aDownFile").attr("href", "#");
+                        $("#aDownFile").html("no file");
+                    }
+                    if (callBack) {
+                        callBack();
+                    }
+                }
+            });
+        }
 
         function doGetDetails(vtype, callBack) {
             var parmFinal = vtype;
@@ -282,12 +338,14 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" style="text-shadow:none">&times;</button>
                         <h2 id="headerADB"  class="modal-title"></h2>
+                        <span id="spanADBModal" style="float:right"><i id="_spanADBModal" class="fa fa-download fa-2x"></i></span>
                         <section id="sectSearch" style="width:100%">
                             <input id="inpSearch" type="search" placeholder="search results" />
                         </section>
                         <section style="width:50%">
                             <button id="btnSearch">search</button><button id="btnShowAll">reset</button>
                         </section>
+                        <section style="height:1em; background-color:lightgoldenrodyellow"><a id="aDownFile" href="#"></a></section>
                     </div>
                     <div id ="bodyADB"   class="modal-body" style="height:400px">
                         <table id="tblModalDetail"></table>

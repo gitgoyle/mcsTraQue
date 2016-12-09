@@ -363,7 +363,7 @@
                 doGetCounts(function () { return; })
             });
 
-            jQuery("#msgTinyModal").on("show.bs.modal", function (e) {
+            jQuery("#msgTinyModal").on("shown.bs.modal", function (e) {
                 if (e.keyCode == 27) { // escape key maps to keycode `27`
                     jQuery("#btnTinyMSGClose").trigger("click");
                     // <DO YOUR WORK HERE>

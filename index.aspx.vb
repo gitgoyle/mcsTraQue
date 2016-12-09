@@ -227,7 +227,7 @@ Public Class index
                 sSQL = "select firstname, lastname, certType,  convert(varchar, addedon,106) addedon, notificationtype from traqmembers tm join traqcerts tc on tm.traqid = tc.traqid "
             Case "TRAINING"
                 sSQL = "select firstname, lastname, title, trnhours,  convert(varchar, addedon,106) addedon from traqmembers tm join traqtraining tt on tm.traqid = tt.traqid "
-            Case "EQUIPUIPMENT"
+            Case "EQUIPMENT"
                 sSQL = "select firstname, lastname, eqamount, eqtitle,  convert(varchar, addedon,106) addedon from traqmembers tm join traqequipment te on tm.traqid = te.traqid "
             Case "CUSTOM"
 
@@ -245,6 +245,34 @@ Public Class index
 
         Return arrReturn
 
+    End Function
+
+    <WebMethod()> _
+    Public Shared Function makeExportFile(ByVal vParms As String) As Array
+        Dim sReturn(0 + 1) As String
+        Dim fkey As String = Now.Hour.ToString & Now.Minute.ToString & Now.Millisecond.ToString
+        fkey = fkey.Replace(".", "").Replace(":", "")
+
+        Try
+            sReturn(0) = "OK"
+            Dim FILE_NAME As String = System.Web.HttpContext.Current.Server.MapPath("media/") & "mcsout_" & fkey & ".csv"
+            Dim lineIn As String = ""
+            Dim objWriter As New System.IO.StreamWriter(FILE_NAME, True)
+
+            Dim arrParms As Array = vParms.Split("²")
+            For i As Integer = 0 To arrParms.GetUpperBound(0)
+                lineIn = arrParms(i).ToString
+                lineIn = lineIn.Replace("°", """")
+                objWriter.WriteLine(lineIn)
+            Next
+            objWriter.Close()
+            sReturn(1) = "./media/mcsout_" & fkey & ".csv"
+        Catch ex As System.Exception
+            sReturn(0) = "BAD"
+            sReturn(1) = ex.InnerException.ToString
+        End Try
+
+        Return sReturn
     End Function
 
 End Class
